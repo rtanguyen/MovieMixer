@@ -4,22 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Movie Mixer</title>
   </head>
   <body>
     <!-- HEADER/NAVBAR  -->
-    <header>
-      <a href="#home" target="_blank"
-        >logo
-        <!-- placeholder for logo: <img src=""/> -->
-      </a>
-      <a>placeholder</a>
-      <a>placeholder</a>
-      <a>placeholder</a>
-    </header>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a href="#home" target="_blank"
+          >logo
+          <!-- placeholder for logo: <img src=""/> -->
+        </a>
+        <a>about</a>
+        <a>movies</a>
+        <a>bar</a>
+      </div>
+    </nav>
 
     <!-- HOME PAGE -->
     <div id="home">
@@ -35,20 +39,40 @@
       </div>
       <div id="favorites">
         <h3>creator favorites</h3>
-        <img />
+        <img src="https://media.lasvegasweekly.com/img/photos/2009/08/27/mimi_t1000.jpg?c76bf34eada957f64a0b14990027a576ff9bf379" alt="Mimi" width="200" height="200"/>
         <h6>mimi</h6>
-        <img />
+        <img src="https://m.media-amazon.com/images/M/MV5BYzgzNGFkNDItZTJkZC00NzJkLTk2OWMtNzliM2I5YzQxYjkxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="Rebecca" width="200" height="200"/>
         <h6>rebecca</h6>
-        <img />
+        <img src="https://www.usmagazine.com/wp-content/uploads/2021/04/Jersey-Shores-Ronnie-Ortiz-Magro-Speaks-Out-After-Domestic-Violence-Arrest-001.jpg?quality=86&strip=all" alt="Ronnie" width="200" height="200"/>
         <h6>ronnie</h6>
-        <img />
+        <img src="https://upload.wikimedia.org/wikipedia/en/d/d3/RyanToys_Review.jpg" alt="Ryan" width="200" height="200"/>
         <h6>ryan</h6>
       </div>
     </div>
 
     <!-- MOVIE PAGE -->
     <div id="movie-screen">
-      <!-- add dropdown -->
+      <div class="dropdown is-active">
+        <div class="dropdown-trigger">
+          <button
+            class="button"
+            aria-haspopup="true"
+            aria-controls="dropdown-menu"
+          >
+            <span>Category</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a href="#" class="dropdown-item">GENRE</a>
+            <a href="#" class="dropdown-item">GENRE</a>
+            <a href="#" class="dropdown-item">GENRE</a>
+          </div>
+        </div>
+      </div>
       <div id="movie-img"></div>
       <div id="movie-info"></div>
       <button id="rerun">hail nah</button>
@@ -56,11 +80,38 @@
     </div>
     <!-- DRINKS PAGE -->
     <div id="drinks-screen" class="hidden">
-      <!-- add dropdown -->
+      <div class="dropdown is-active">
+        <div class="dropdown-trigger">
+          <button
+            class="button"
+            aria-haspopup="true"
+            aria-controls="dropdown-menu"
+          >
+            <span>Category</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu" role="menu">
+          <div class="dropdown-content">
+            <a href="#" class="dropdown-item">DRINK</a>
+            <a href="#" class="dropdown-item">DRINK</a>
+            <a href="#" class="dropdown-item">DRINK</a>
+          </div>
+        </div>
+      </div>
       <div id="drink-img"></div>
       <div id="drink-recipe"></div>
       <button id="rerun">hail nah</button>
       <button id="next-page">next</button>
+    </div>
+
+    <!--Div that will hold Appended Movie elements-->
+    <div class="move-display" id="movide-display">
+      <div class="movie-title">Movie Will go here</div>
+      <div class="movie-img">Image of Movie</div>
+      <div class="movie-link">Streaming link</div>
     </div>
     <!-- FOOTER -->
     <footer>
