@@ -56,6 +56,8 @@ var getDrinkInstr = function (id) {
 			response.json().then(function (data) {
 				console.log(data);
 				var drink = parseDrinkResponse(data);
+				//clear old ingredients div if user makes different selection
+				$("#ingredients").empty();
 				displayDrink(drink);
 			});
 		})
@@ -110,7 +112,7 @@ var parseDrinkResponse = function (response) {
 	return drink;
 };
 
-//event listener to rerun
+//event listener to rerun based on last user selection
 rerunBtnEl.addEventListener("click", function() {
 	$("#ingredients").empty();
 	randomDrink(userInput);
