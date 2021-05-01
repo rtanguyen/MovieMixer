@@ -53,7 +53,8 @@ var getDrinkInstr = function (id) {
 		.then(function (response) {
 			response.json().then(function (data) {
 				console.log(data);
-				var parseCocktails = parseDrinkResponse(data);
+				var drink = parseDrinkResponse(data);
+                displayDrink (drink);
 				console.log(parseCocktails);
 			});
 		})
@@ -61,6 +62,24 @@ var getDrinkInstr = function (id) {
 			console.error(err);
 		});
 };
+
+//Display Drink data 
+var displayDrink = function (drink) {
+
+    // console.log("test this");
+    // console.log(drink);
+
+    $("#drinkImg").attr("src", drink.img);
+    $("#drinkName").text(drink.name);
+    $("#drink-recipe").text(drink.instruction);
+    console.log('drinkname');
+    console.log(drink.ingredients)
+
+    //pull ingredient data into html
+    for (var i=0; i< drink.ingredients.length; i++) {
+        let ingredientsDisplay = $("<p>").text(drink.ingredients[i]).appendTo($("#ingredients"));
+    };
+}
 
 //grab details, turn into drink object
 var parseDrinkResponse = function (response) {
