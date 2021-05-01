@@ -12,19 +12,32 @@
     <title>Movie Mixer</title>
   </head>
   <body>
-    <!-- HEADER/NAVBAR  -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <!-- HEADER/NAVBAR --> 
+    <nav class="navbar min-height: unset;" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-      <a href="#home" target="_blank"
-        >logo
-        <!-- placeholder for logo: <img src=""/> -->
-      </a>
-        <a>about</a>
-        <a>movies</a>
-        <a>bar</a>
-        <a>movie mixes</a>
+        <a class="navbar-item" href="index.html">
+          <img src="assets/images/logo4.svg" alt="mm-logo" width="110" height="60">
+        </a>
+    
+    <!-- NAV TABS -->
       </div>
-    </nav>
+      <div id="navbarItems" class="navbar-menu is-active">
+        <div class="navbar-end">
+          <a href="index.html" class="navbar-item">
+              Home
+            </a>
+          <a href="movie.html" class="navbar-item">
+            Theater
+          </a>
+          <a href="drink.html" class="navbar-item">
+            Bar
+          </a>
+          <a href="rewind" class="navbar-item">
+              Rewind
+            </a>
+          </div>
+      </div>
+    </nav> 
 
     <!-- HOME PAGE -->
     <div id="home">
@@ -118,7 +131,9 @@
     <footer>
       <p>placeholder</p>
     </footer>
-
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="assets/js/moviescript.js"></script>
+    <script src="assets/js/drinksscript.js"></script>
   </body>
 </html>
