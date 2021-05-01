@@ -1,20 +1,16 @@
 // MOVIE MIXER LOGIC
 
 //====================== LOGIC AND RUN ======================//
-
-// open items! SORRY THIS IS A MESS IDK WHERE TO PUT NOTES
-// add drop down event listeners (to drop down menu, to grab user selection)
-//create elements/display results and buttons (should we hide drop down?)
-//add event listeners to buttons
-//if user clicks hail nah, rerun
 //VARIABLES
 var userInput;
 var drinkResultEl = document.querySelector("#drink-display");
+var rerunBtnEl = document.querySelector("#rerun")
 
 //grab user input from drop down menu
 var getUserSelection = function (event) {
 	console.log(event);
-	userInput = event.target.innerHTML;
+	userInput = event.target.innerText.trim();
+	console.log(userInput)
 	randomDrink(userInput);
 };
 
@@ -30,7 +26,7 @@ var randomDrink = function (input) {
 	})
 		.then(function (response) {
 			response.json().then(function (data) {
-				// console.log(data);
+				console.log(data);
 				// console.log(data.drinks)
 
 				//pick random
@@ -113,3 +109,9 @@ var parseDrinkResponse = function (response) {
 	}
 	return drink;
 };
+
+//event listener to rerun
+rerunBtnEl.addEventListener("click", function() {
+	$("#ingredients").empty();
+	randomDrink(userInput);
+});
