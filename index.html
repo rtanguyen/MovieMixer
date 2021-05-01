@@ -13,31 +13,41 @@
   </head>
   <body>
     <!-- HEADER/NAVBAR --> 
-    <nav class="navbar min-height: unset;" role="navigation" aria-label="main navigation">
+    <<nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="index.html">
-          <img src="assets/images/logo4.svg" alt="mm-logo" width="110" height="60">
+          <img src="assets/images/logo4.svg" alt="mm-logo" width="112" height="28">
         </a>
     
-    <!-- NAV TABS -->
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-      <div id="navbarItems" class="navbar-menu is-active">
+    <!-- Nav Bar tabs-->
+      <div id="navbarTabs" class="navbar-menu">
         <div class="navbar-end">
-          <a href="index.html" class="navbar-item">
-              Home
+          <a href="index.html" class="navbar-item">Home</a>
+          <a href="movie.html" class="navbar-item">Theater</a>
+          <a href="drink.html" class="navbar-item">Bar</a>
+          <a href="rewind.html" class="navbar-item">Rewind</a>
+    
+          <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link">
+              Streaming Services
             </a>
-          <a href="movie.html" class="navbar-item">
-            Theater
-          </a>
-          <a href="drink.html" class="navbar-item">
-            Bar
-          </a>
-          <a href="rewind" class="navbar-item">
-              Rewind
-            </a>
+          <!-- Streaming Services Dropdown-->
+            <div class="navbar-dropdown">
+              <a href="https://www.netflix.com/" class="navbar-item">Nexflix</a>
+              <a href="https://www.hulu.com/" class="navbar-item">Hulu</a>
+              <a href="https://www.hbomax.com/"class="navbar-item">HBO Max</a>
+              <a href ="https://www.youtube.com/"class="navbar-item">Youtube</a>
+            </div>
           </div>
+        </div>
       </div>
-    </nav> 
+    </nav>
 
     <!-- HOME PAGE -->
     <div id="home">
