@@ -1,10 +1,18 @@
+.navbar {
+    background-color: #1B1106;
+    color: #fff;
+}
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: #fff;
+    background-color: #1B1106;
 }
 
 section.hero.is-primary {
     background-image: url("../images/hero-image.jpg");
     background-size: cover;
     background-position: center;
+}
+
+h1.title.is-1:hover {
+    transform: rotateY(150deg);
 }
