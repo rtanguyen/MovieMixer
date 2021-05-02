@@ -9,11 +9,16 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
     />
     <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+    src="https://kit.fontawesome.com/f78f1848e0.js"
+    crossorigin="anonymous"
+  ></script>
     <title>Movie Mixer</title>
   </head>
+
   <body>
     <!-- HEADER/NAVBAR --> 
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-white mx-6" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="index.html">
           <img src="assets/images/logo4.svg" alt="mm-logo" width="112" height="28">
@@ -25,19 +30,21 @@
           <span aria-hidden="true"></span>
         </a>
       </div>
+
     <!-- Nav Bar tabs-->
-      <div id="navbarTabs" class="navbar-menu">
+      <div id="nav-links" class="navbar-menu is-active">
         <div class="navbar-end">
           <a href="index.html" class="navbar-item">Home</a>
           <a href="movie.html" class="navbar-item">Theater</a>
           <a href="drink.html" class="navbar-item">Bar</a>
           <a href="rewind.html" class="navbar-item">Rewind</a>
     
+    <!-- Streaming Services Dropdown-->
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link">
+            <a class="navbar-link is-arrowless">
               Streaming Services
             </a>
-          <!-- Streaming Services Dropdown-->
+
             <div class="navbar-dropdown">
               <a href="https://www.netflix.com/" class="navbar-item">Nexflix</a>
               <a href="https://www.hulu.com/" class="navbar-item">Hulu</a>
@@ -49,66 +56,58 @@
       </div>
     </nav>
 
-    <!-- HOME PAGE -->
-    <div id="home">
-      <div class="cta">
-        <h1>are you bored in the house and in the house bored</h1>
-        <p>
-          have a fun night in with movie mixer! this app picks a movie and drink
-          for you to enjoy without having to scroll through the endless depths
-          of netflix lsdkjfsldkfjlsdkfjlskdfj idk lol
+    <!-- HERO -->
+    <section class="hero is-primary is-medium is-link">
+      <div class="hero-body">
+        <h1 class="title is-1 has-text-centered is-mobile">M O V I E M I X E R</h1>
+        <p class="subtitle has-text-centered is-mobile">
+          Lights Out for a Night In
         </p>
-        <button id="start-btn">Get Started</button>
-        <button id="about-btn">Learn More</button>
       </div>
-      <div id="favorites">
-        <h3>creator favorites</h3>
-        <img src="https://media.lasvegasweekly.com/img/photos/2009/08/27/mimi_t1000.jpg?c76bf34eada957f64a0b14990027a576ff9bf379" alt="Mimi" width="200" height="200"/>
-        <h6>mimi</h6>
-        <img src="https://m.media-amazon.com/images/M/MV5BYzgzNGFkNDItZTJkZC00NzJkLTk2OWMtNzliM2I5YzQxYjkxXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="Rebecca" width="200" height="200"/>
-        <h6>rebecca</h6>
-        <img src="https://www.usmagazine.com/wp-content/uploads/2021/04/Jersey-Shores-Ronnie-Ortiz-Magro-Speaks-Out-After-Domestic-Violence-Arrest-001.jpg?quality=86&strip=all" alt="Ronnie" width="200" height="200"/>
-        <h6>ronnie</h6>
-        <img src="https://www.prescottpark.org/uploads/2019/06/f00bf346385235.58520f9022451-1020x1020.jpg" alt="Ryan" width="200" height="200"/>
-        <h6>ryan</h6>
-      </div>
-    </div>
+    </section>
 
-    <!-- MOVIE PAGE -->
-    <div id="movie-screen">
-      <div class="dropdown is-active">
-        <div class="dropdown-trigger">
-          <button
-            class="button"
-            aria-haspopup="true"
-            aria-controls="dropdown-menu"
-          >
-            <span>Category</span>
-            <span class="icon is-small">
-              <i class="fas fa-angle-down" aria-hidden="true"></i>
-            </span>
-          </button>
-        </div>
-        <div class="dropdown-menu" id="dropdown-menu" role="menu">
-          <div class="dropdown-content">
-            <a href="#" class="dropdown-item">GENRE</a>
-            <a href="#" class="dropdown-item">GENRE</a>
-            <a href="#" class="dropdown-item">GENRE</a>
+    <!-- Application info -->
+    <!-- Theater -->
+    <section class="section">
+      <div class="container box">
+        <div class="columns">
+          <div class="column is-4">
+            <h1 class="is-size-2 title">Theater</h1>
+            <h2 class="is-size-3 subtitle">Pick a reel</h2>
+            <p class="content">Power through a Horror film with ravenous zombies on trains. Grab a box of chocolates and tissues for a Romantic Comedy to witness a layover that left a young writer stranded in Vermont, where she meets a handsome farmer.
+            </p>
+            <p class="content">
+              Head to the Theater, Choose what you're in the mood for, And let us do the rest!</p>
+            <p class="is-size-7">*If you're going to watch a scary movie, make sure all lights are on before doing so.</p>
+          </div>
+          <div class="column is-8">
+            <img class="homeDrinkImg" src="assets/images/movie2.jpg">
           </div>
         </div>
       </div>
-      <div id="movie-img"></div>
-      <div id="movie-info"></div>
-      <button id="rerun">hail nah</button>
-      <button id="next-page">next</button>
-    </div>
+    </section>
 
-   <!--Div that will hold Appended Movie elements-->
-   <div class="move-display" id="movie-display">
-    <div class="movie-title">Movie Will go here</div>
-    <div class="movie-img">Image of Movie</div>
-    <div class="movie-link">Streaming link</div>
-  </div>
+    <!-- Bar -->
+    <section class="section">
+      <div class="container box">
+        <div class="columns">
+          <div class="column is-8">
+            <img class="homeMovieImg" src="assets/images/bar2.jpg">
+          </div>
+          <div class="column is-4">
+            <h1 class="is-size-2 title">Bar</h1>
+            <h2 class="is-size-3 subtitle">Make a drink</i></h2>
+            <p class="content">Who doesn't love a night cap. No time for a basic hop, tonight we get fancy. Sugar or salt. Frozen or on the rocks. All we know is, nobody's got time for a virgin pina colada.
+            </p>
+            <p class="content">
+              Take a step to the Bar. Pick your poison. Grab the goods and a shaker because it's time to party (on the couch)!
+            </p>
+            <p class="is-size-7">*Drink responsibly. Must be 21+. Oh, don't drink and drive...we can't bail you out.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <!-- FOOTER -->
     <footer>
       <p>placeholder</p>
@@ -117,5 +116,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="assets/js/moviescript.js"></script>
     <script src="assets/js/drinksscript.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

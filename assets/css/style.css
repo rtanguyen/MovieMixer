@@ -1,0 +1,10 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff;
+}
+
+section.hero.is-primary {
+    background-image: url("../images/hero-image.jpg");
+    background-size: cover;
+    background-position: center;
+}
