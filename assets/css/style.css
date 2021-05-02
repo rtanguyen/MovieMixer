@@ -1,18 +1,38 @@
 .navbar {
-    background-color: #1B1106;
-    color: #fff;
+    background-color: transparent;
+    color: #000;
+
 }
+
+/* HOME PAGE STYLING */
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: #1B1106;
+    background-image: url(/assets/images/background2.jpg);
+    position: -webkit-sticky; 
+    position: sticky;
 }
 
-section.hero.is-primary {
+section.hero.is-primary.homePage {
     background-image: url("../images/hero-image.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: center;    
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    color: #000;
 }
 
-h1.title.is-1:hover {
+h1.title.is-size-1-desktop:hover {
     transform: rotateY(150deg);
+}
+
+img.homeDrinkImg:hover{
+    src: url("/assets/images/movie1.jpg");
+}
+
+/* DRINKS STYLING */
+section.hero.drink.is-medium {
+    background-image: url("/assets/images/edgar-chaparro-Lwx-q6OdGAc-unsplash.jpg");
+    background-size: cover;
+    background-position: center; 
 }
