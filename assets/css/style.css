@@ -7,7 +7,7 @@
 /* HOME PAGE STYLING */
 body {
     font-family: 'Quicksand', sans-serif;
-    background-image: url("/assets/images/background2.jpg");
+    background-image: url("../images/background2.jpg");
     position: -webkit-sticky; 
     position: sticky;
 }
@@ -32,7 +32,7 @@ img.homeDrinkImg:hover{
 
 /* DRINKS STYLING */
 section.hero.drink.is-medium {
-    background-image: url("/assets/images/edgar-chaparro-Lwx-q6OdGAc-unsplash.jpg");
+    background-image: url("../images/edgar-chaparro-Lwx-q6OdGAc-unsplash.jpg");
     background-size: cover;
     background-position: center; 
 }
