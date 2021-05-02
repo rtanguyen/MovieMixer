@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+		/>
+		<link rel="stylesheet" href="Assets/css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/f78f1848e0.js"
+			crossorigin="anonymous"
+		></script>
+		<title>Movie Selection</title>
+	</head>
+	<body>
+  <!-- HEADER/NAVBAR -->
+  <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="assets/images/logo4.svg" alt="mm-logo" width="112" height="28">
+      </a>
+
+      <a role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <!-- Nav bar tabs-->
+    <div id="nav-links" class="navbar-menu is-active">
+      <div class="navbar-end">
+        <a href="index.html" class="navbar-item">Home</a>
+        <a href="movie.html" class="navbar-item">Theater</a>
+        <a href="drink.html" class="navbar-item">Bar</a>
+        <a href="rewind.html" class="navbar-item">Rewind</a>
+
+    <!--Streaming Services Dropdown-->
+    <div class="navbar-item has-dropdown is-hoverable">
+      <a class="navbar-link is-arrowless">Streaming Services</a>
+
+      <div class="navbar-dropdown">
+        <a href="https://www.netflix.com/" class="navbar-item">
+          Nexflix
+        </a>
+        <a href="https://www.hulu.com/" class="navbar-item">
+          Hulu
+        </a>
+        <a href="https://www.hbomax.com/"class="navbar-item">
+          HBO Max
+        </a>
+        <a href ="https://www.youtube.com/"class="navbar-item">
+          Youtube
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</nav>
+
+		<!-- PAGE DESCRIPTION-->
+		<div id="moviePage" class="movieInfo">
+			<h1 class="welcome">Welcome to the Theater Room!</h1>
+			<p class="movieSubHead">
+				Tired of scrolling through page upon page? Unsure what to watch? <br/>Let's decide for you. Pick a genre from the dropdown menu and we'll decide for you.<br/>
+                If you don't like the movie choice, hit the "Hail nah" button to reroll.
+			</p>
+		</div>
+
+		<!-- DRINKS PAGE -->
+		<div class="dropdown">
+			<div class="dropdown-trigger">
+				<button
+					class="button"
+					onclick="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
+					onblur="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
+					aria-haspopup="true"
+					aria-controls="dropdown-menu"
+				>
+					<span>Show me the Movie</span>
+					<span class="icon is-small">
+						<i class="fas fa-angle-down" aria-hidden="true"></i>
+					</span>
+				</button>
+			</div>
+			<div class="dropdown-menu" id="dropdown-menu2" role="menu">
+				<div class="dropdown-content">
+					<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">action</a>
+					<a href="#" onmousedown="javascript:getUserSelection(event);"class="dropdown-item">comedy</a>
+					<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">horror</a>
+					<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">romantic</a>
+					<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">thriller</a>
+					<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">drama</a>
+				</div>
+			</div>
+		</div>
+		<!--contianer to hold movie display and buttons-->
+		<div class="movie-container">
+			<div class="movie-display" id="movie-display">
+	            <!--appended elements will display here-->
+			</div>
+			<div id="like-Btns" class="btn"></div>
+				<a class="button is-danger is-outlined" id="rerun">hail nah</a>
+                <i onclick="toggleFavorite(this)" class="far fa-star" id="fave-icon"></i>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+		<script src='assets/js/moviescript.js'></script>
+    <script src="assets/js/script.js"></script>
+	</body>
+    <!-- FOOTER -->
+	<footer class="footer">
+		<div class="content has-text-centered">
+			<p class="is-size-6">
+				<strong>Movie Mixer</strong> by R+M Designs &#124; All Rights Reserved
+			</p>
+		</footer>
+</html>
