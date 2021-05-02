@@ -1,19 +1,19 @@
-// MOVIE MIXER LOGIC
-
-//====================== LOGIC AND RUN ======================//
 //VARIABLES
+let favoriteArray = [];
+let drink = {};
 var userInput;
 var drinkResultEl = document.querySelector("#drink-display");
-var rerunBtnEl = document.querySelector("#rerun")
+var rerunBtnEl = document.querySelector("#rerun");
+let favoriteEl = document.querySelector("#fave-icon");
+//====================== LOGIC AND RUN ======================//
 
 //grab user input from drop down menu
 var getUserSelection = function (event) {
 	console.log(event);
 	userInput = event.target.innerText.trim();
-	console.log(userInput)
+	console.log(userInput);
 	randomDrink(userInput);
 };
-
 
 //pick cocktail based on user input, grab drink ID
 var randomDrink = function (input) {
@@ -55,7 +55,7 @@ var getDrinkInstr = function (id) {
 		.then(function (response) {
 			response.json().then(function (data) {
 				console.log(data);
-				var drink = parseDrinkResponse(data);
+				drink = parseDrinkResponse(data);
 				//clear old ingredients div if user makes different selection
 				$("#ingredients").empty();
 				displayDrink(drink);
@@ -74,8 +74,8 @@ var displayDrink = function (drink) {
 	$("#drinkImg").attr("src", drink.img);
 	$("#drinkName").text(drink.name);
 	$("#drink-recipe").text(drink.instruction);
-	console.log("drinkname");
-	console.log(drink.ingredients);
+	// console.log("drinkname");
+	// console.log(drink.ingredients);
 
 	//pull ingredient data into html
 	for (var i = 0; i < drink.ingredients.length; i++) {
@@ -113,7 +113,20 @@ var parseDrinkResponse = function (response) {
 };
 
 //event listener to rerun based on last user selection
-rerunBtnEl.addEventListener("click", function() {
+rerunBtnEl.addEventListener("click", function () {
 	$("#ingredients").empty();
 	randomDrink(userInput);
+	favoriteEl.classList.add("far");
+	favoriteEl.classList.remove("fas");
 });
+
+//save favorite
+var toggleFavorite = function (favorite) {
+	favorite.classList.toggle("fas");
+	console.log(favoriteEl);
+
+	if (favoriteEl.classList.contains("fas")) {
+		favoriteArray.push(drink);
+		console.log(favoriteArray);
+	}
+};
