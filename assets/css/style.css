@@ -76,3 +76,20 @@ section.hero.movie.is-medium {
     font-size: larger;
     font-weight: bold;
 }
+
+.far.fa-star.fas {
+    color: gold;
+}
+
+.rewindDrinkTitle {
+    color: black;
+}
+
+.rewindDrinkSection {
+    background-color: white;
+    border-bottom: black;
+}
+
+.rewindMovieSection {
+    background-color: white;
+}
