@@ -1,7 +1,7 @@
 //variables
 var userInput;
 let favoriteArray = [];
-let move = {}
+let movie = {}
 //dom elements
 var movieResultEl = document.querySelector('#movie-display')
 var rerunBtnEl = document.querySelector("#rerun")
@@ -28,7 +28,11 @@ function fetchMovie(userInput) {
             console.log(data)
             var movieChoice = data.results[Math.floor(Math.random()*data.results.length)];    
             console.log(movieChoice)
+         // clear old movie div if user makes different selection
+            $("#movie-display").empty();
             renderMoviesData(movieChoice)
+           
+            
         })
         .catch(err => {
             console.log(err);
