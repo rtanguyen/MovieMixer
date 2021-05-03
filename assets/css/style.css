@@ -36,3 +36,43 @@ section.hero.drink.is-medium {
     background-size: cover;
     background-position: center; 
 }
+
+/* Movie Styling */
+section.hero.movie.is-medium {
+ background-color: transparent;
+}
+
+#videoBG {
+    position: absolute; 
+    right: 0; 
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto; 
+    height: auto; 
+    z-index: -1;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    
+}
+
+.footer {
+    background-color: transparent;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.movie-display {
+    color: white;
+    font-size: larger;
+    /* font-weight: bold; */
+    padding-top: 130px;
+}
+
+.movie-display.h2 {
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+}
