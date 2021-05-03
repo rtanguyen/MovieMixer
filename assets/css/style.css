@@ -90,7 +90,7 @@ section.hero.movie.is-medium {
 .rewindDrinkSection {
     background-color: white;
     border-bottom: black;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .rewindMovieSection {
@@ -102,17 +102,28 @@ section.hero.movie.is-medium {
     position: relative;
     width: 100%;
     height: 100%;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     color: white;
 }
 
 .drinkFavorites {
     border-style: outset;
     border-width: 5px;
+    align-items: center;
 }
 
 .movieFavorites {
     border-style: outset;
     border-width: 5px;
+    align-items: center;
+}
+
+/* Rewind Btn */
+.rewindBox {
+    background-color: transparent;
+}
+
+.rewindBtn {
+    height: unset;
 }
