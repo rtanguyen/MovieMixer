@@ -1,50 +1,89 @@
 //variables
-var userGenre = '2'
+var userInput;
+let favoriteArray = [];
+let move = {}
 //dom elements
 var movieResultEl = document.querySelector('#movie-display')
+var rerunBtnEl = document.querySelector("#rerun")
+let favoriteEl = document.querySelector("#fave-icon");
 
-//get userinput translate to API genre numbers
-//function runs with a hardcoded endpoint, need to add random feature, or grab a random movie from the list
-//for loop to cycle through movie results API displays multiple movies 'per page'
-//add event listeners to buttons
-    //if user clicks hail nah, rerun
-function fetchMovie() {
-  fetch("https://streaming-availability.p.rapidapi.com/get/basic?country=us&tmdb_id=movie%2F120", {
+//grab user input from drop down for movie service selector
+var getUserSelection = function (event) {
+	console.log(event);
+	userInput = event.target.innerText.trim();
+	console.log(userInput)
+	fetchMovie(userInput);
+};
+//fetches a movie based on genre by user input
+function fetchMovie(userInput) {
+    fetch("https://ott-details.p.rapidapi.com/advancedsearch?start_year=2010&end_year=2021&min_imdb=6&max_imdb=10&genre=" + userInput + "&language=english&type=movie&sort=latest&page=1", {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-key": "34dff35736msh55aa38c64ff1987p1a7defjsn975b941ff55a",
-		"x-rapidapi-host": "streaming-availability.p.rapidapi.com"
+		"x-rapidapi-host": "ott-details.p.rapidapi.com"
 	}
-        })
+    })
         .then(response => response.json()) 
-        .then(data => {         
-           renderMoviesData(data)
+        .then(data => { 
+            console.log(data)
+            var movieChoice = data.results[Math.floor(Math.random()*data.results.length)];    
+            console.log(movieChoice)
+            renderMoviesData(movieChoice)
         })
         .catch(err => {
             console.log(err);
         });  
 }
+
 //this function renders the api result
-function renderMoviesData(data) {
-    var movieTitle = data.title
+function renderMoviesData(movieChoice) {
+    //render movie title 
+    var movieTitle = movieChoice.title
     console.log(movieTitle)
-    var movieDescription = data.overview
-    console.log(movieDescription)
+    //render movie synopsis
+    var movieSynopsis = movieChoice.synopsis
+    console.log(movieSynopsis)
+    //render movie rating
+    var movieRating = movieChoice.imdbrating
+    console.log(movieRating)
+    //remder movie img url
+    var movieImg = movieChoice.imageurl[0]
+    console.log(movieImg)
     //creating necessary elements
     const movieTitleDisplay = document.createElement('h2')
     const descriptionDisplay = document.createElement('p')
+    const movieRatingDisplay = document.createElement('h2')
+    //img creation
+    const movieImgDisplay = document.createElement('img')
+    movieImgDisplay.setAttribute('src', movieImg)
+    movieImgDisplay.setAttribute('alt','movie rendered image')
     //grab data and insert into html
-    movieTitleDisplay.innerHTML = movieTitle
-    descriptionDisplay.innerHTML = movieDescription
+    movieTitleDisplay.innerHTML = "Your movie is " + movieTitle
+    descriptionDisplay.innerHTML = "Brief synopsis: " + movieSynopsis
+    movieRatingDisplay.innerHTML = "it has a " + movieRating + " on IMDB."
     //append to movie display container
+    movieResultEl.appendChild(movieImgDisplay)
     movieResultEl.appendChild(movieTitleDisplay);
     movieResultEl.appendChild(descriptionDisplay)
+    movieResultEl.appendChild(movieRatingDisplay)
     
 }
+//reroll for a different movie
+rerunBtnEl.addEventListener("click", function() {
+	$("#movie-display").empty();
+	fetchMovie(userInput);
+});
+
+//save favorite
+function toggleFavorite (favorite) {
+	favorite.classList.toggle("fas");
+	console.log(favoriteEl);
+
+	if (favoriteEl.classList.contains("fas")) {
+		favoriteArray.push(movie);
+		console.log(favoriteArray);
+	}
+};
 fetchMovie();
 
 
-
-//if user selects <streaming service> displays <streaming service logo>
-
-//DOM event listeners
