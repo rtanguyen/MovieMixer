@@ -1,5 +1,5 @@
 //VARIABLES
-let favoriteDrinkArray = new Array(4).fill("");
+let favoriteDrinkArray = [];
 let drink = {};
 var userInput;
 var drinkResultEl = document.querySelector("#drink-display");
@@ -118,15 +118,21 @@ rerunBtnEl.addEventListener("click", function () {
   favoriteEl.classList.remove("fas");
 });
 
-//save favorite
+//toggle favorite
 var toggleFavorite = function (favorite) {
   favorite.classList.toggle("fas");
   console.log(favoriteEl);
-
-  if (favoriteEl.classList.contains("fas")) {
-    favoriteDrinkArray.push(drink);
-    console.log(favoriteDrinkArray);
-  }
+  saveFavorite(drink);
   localStorage.setItem("savedDrinks", JSON.stringify(favoriteDrinkArray));
 };
 
+//save favorite
+var saveFavorite = function(drink) {
+  if (favoriteEl.classList.contains("fas")) {
+    favoriteDrinkArray.push(drink);
+    console.log(favoriteDrinkArray);
+    //if user unstars drink, removes last object from array
+  } else if (favoriteEl.classList.contains("far")) {
+    favoriteDrinkArray.pop();
+}
+};
