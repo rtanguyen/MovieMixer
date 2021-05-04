@@ -64,6 +64,20 @@ section.hero.movie.is-medium {
     font-size: larger;
     font-weight: bold;
 }
+
+.nameDrink {
+    color: white;
+}
+
+.ingList {
+    color: white;
+}
+
+.drinkRec {
+    color: white;
+}
+
+
 /* movie page */
 .movie-display {
     color: white;
