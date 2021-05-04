@@ -13,141 +13,150 @@
 			src="https://kit.fontawesome.com/f78f1848e0.js"
 			crossorigin="anonymous"
 		></script>
-		<title>Bar</title>
+		<link rel="icon" type="image/jpeg" href="/assets/images/favicon.jpeg"/>
+		<title>Movie Mixer</title>
 	</head>
 	<body>
 
-    <!-- HEADER/NAVBAR --> 
-    <nav class="navbar is-transparent mx-6" role="navigation" aria-label="main navigation">
-		<div class="navbar-brand">
-		  <a class="navbar-item" href="index.html">
-			<img src="assets/images/logo4.svg" alt="mm-logo" width="112" height="28">
-		  </a>
-	  
-		  <a role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-			<span aria-hidden="true" class="has-text-white"></span>
-			<span aria-hidden="true" class="has-text-white"></span>
-			<span aria-hidden="true" class="has-text-white"></span>
-		  </a>
-		</div>
-  
-	  <!-- Nav Bar tabs-->
-		<div id="nav-links" class="navbar-menu">
-		  <div class="navbar-end">
-			<a href="index.html" class="navbar-item is-size-5-tablet has-text-grey-light">Home</a>
-			<a href="movie.html" class="navbar-item is-size-5-tablet has-text-grey-light">Theater</a>
-			<a href="drink.html" class="navbar-item is-size-5-tablet has-text-grey-light">Bar</a>
-			<a href="rewind.html" class="navbar-item is-size-5-tablet has-text-grey-light">Rewind</a>
-
-	  
-	  <!-- Streaming Services Dropdown-->
-			<div class="navbar-item has-dropdown is-hoverable">
-			  <a class="navbar-link is-arrowless is-size-5-tablet has-text-grey-light">
-				Streaming Services
-			  </a>
-  
-			  <div class="navbar-dropdown">
-				<a href="https://www.netflix.com/" class="navbar-item">Netflix</a>
-				<a href="https://www.hulu.com/" class="navbar-item">Hulu</a>
-				<a href="https://www.hbomax.com/"class="navbar-item">HBO Max</a>
-				<a href ="https://www.youtube.com/"class="navbar-item">Youtube</a>
-			  </div>
+    	<!-- HEADER/NAVBAR --> 
+		<nav class="navbar is-white px-3" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+			<a class="navbar-item" href="index.html">
+				<img src="assets/images/favicon.jpeg" alt="mm-logo" width="30" height="30">
+			</a>
+		
+			<a role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+				<span aria-hidden="true" class="has-text-black"></span>
+				<span aria-hidden="true" class="has-text-black"></span>
+				<span aria-hidden="true" class="has-text-black"></span>
+			</a>
 			</div>
-		  </div>
-		</div>
-	  </nav>
+
+			<!-- Nav Bar tabs-->
+			<div id="nav-links" class="navbar-menu">
+				<div class="navbar-end is-uppercase is-size-6">
+					<a href="index.html" class="navbar-item has-text-black">Home</a>
+					<a href="movie.html" class="navbar-item has-text-black">Theater</a>
+					<a href="drink.html" class="navbar-item has-text-black">Bar</a>
+				
+					<!-- Streaming Services Dropdown-->
+					<div class="navbar-item has-dropdown is-hoverable">
+						<a class="navbar-link is-arrowless is-size-6 has-text-black">
+						Streaming Services
+						</a>
+
+					<div class="navbar-dropdown">
+						<a href="https://www.netflix.com/" class="navbar-item">Netflix</a>
+						<a href="https://www.hulu.com/" class="navbar-item">Hulu</a>
+						<a href="https://www.hbomax.com/"class="navbar-item">HBO Max</a>
+						<a href ="https://www.youtube.com/"class="navbar-item">Youtube</a>
+					</div>
+					</div>
+				</div>
+			</div>
+		</nav>
 
 		<!-- Hero -->
 		<section class="hero is-primary is-medium drink is-link has-text-white">
 			<div class="hero-body">
-			<p class="title is-size-2 drinkHead">
+			<p class="title is-size-2 drinkHead has-text-centered is-uppercase">
 				Welcome to the Bar
-			</p>
-			<p class="drinkSubHead">
-				Greetings, fellow mixologist, what's on the drink menu tonight? Nigroni
-				or a Moscow Mule perhaps. Still not sure? <br />No worries! Select your
-				liquor of choice from the topshelf and let's get to shaking.
 			</p>
 			</div>
 		</section>
 
+
 		<!-- DRINKS PAGE -->
-		<section class="section">
+		<div class="subheader">
 			<div class="container">
-				<div class="columns">
-					<div class="column is-4">
-					</div>
-					<div class="column">
-						<p class="drinkDropDown has-text-centered has-text-weight-bold is-size-3-desktop has-text-white">Pick Your Poison</p>
-							<div class="dropdown">
-								<div class="dropdown-trigger">
-								<button
-									class="button drinkDrop"
-									onclick="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
-									onblur="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
-									aria-haspopup="true"
-									aria-controls="dropdown-menu">
-									<span>Select</span>
-									<span class="icon is-small">
-										<i class="fas fa-angle-down" aria-hidden="true"></i>
-									</span>
-								</button>
-							</div>
-							<div class="dropdown-menu" id="dropdown-menu2" role="menu">
-								<div class="dropdown-content">
-									<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item tequila">Tequila</a>
-									<a href="#" onmousedown="javascript:getUserSelection(event);"class="dropdown-item rum">Rum</a>
-									<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item whiskey">Whiskey</a>
-									<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item gin">Gin</a>
-									<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item vodka">Vodka</a>
+			</div>
+		</div>
+			<section class="section">
+				<div class="container">
+					<div class="columns">
+						<div class="column is-4">
+						</div>
+						<div class="column">
+							<p class="drinkDropDown has-text-centered has-text-weight-bold is-size-3-desktop is-size-4-mobile has-text-danger pb-5">Find A Recipe</p>
+							<p class="drinkSubHead subtitle is-size-5-mobile has-text-white has-text-centered has-text-weight-medium">
+								Greetings, fellow mixologist. 
+								 <br>Select your
+								liquor of choice from the topshelf and let's get to shaking.
+							</p>
+							<div class="dropdown drink my-5">
+								<div class="dropdown-trigger drink">
+									<button
+										class="button drinkDrop"
+										onclick="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
+										onblur="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
+										aria-haspopup="true"
+										aria-controls="dropdown-menu">
+										<span>Pick Your Poison</span>
+										<span class="icon is-small">
+											<i class="fas fa-angle-down" aria-hidden="true"></i>
+										</span>
+									</button>
+								</div>
+								<div class="dropdown-menu" id="dropdown-menu2" role="menu">
+									<div class="dropdown-content">
+										<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item tequila">Tequila</a>
+										<a href="#" onmousedown="javascript:getUserSelection(event);"class="dropdown-item rum">Rum</a>
+										<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item whiskey">Whiskey</a>
+										<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item gin">Gin</a>
+										<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item vodka">Vodka</a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="column is-4">
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-				<!-- Display drink data after User selection-->
-		<section class="section drinkInfo">
-			<div class="container box">
-				<div class="drink-display" id="drink-display">
-					<h2 id="drinkName" class="nameDrink has-text-centered is-size-3-desktop is-size-5-mobile"></h2>
-				</div>
-				<div class="columns">
-						<div class="column is-8">
-						<figure class="image drink">
-							<img id="drinkImg" class="drinkPic" />
-						</figure>
-					</div>
-					<div class="column is-4">
-						<span><i onclick="toggleFavorite(this)" class="far fa-star" id="fave-icon"></i></span>
-						<div id="ingredients" class="ingList"></div>
-						<div id="drink-recipe" class="drinkRec"></div>
-						<div id="like-Btns" class="btn"></div>
+						<div class="column is-4"></div>
 					</div>
 				</div>
-					<a class="button is-danger" id="rerun">Remix</a>
-				</div>	
-			</div>
-		</section>
+			</section>
 
+
+				<!-- Display drinkdata after User selection-->
+			<section class="section drinkInfo">
+				<div class="container drink">
+					<div class="columns">
+						<div class="column is-2"></div>
+							<div class="container column box is-8">
+								<div class="columns drink">
+									<div class="columnis-2">
+										<figure class="image drink is-vcentered px-4 pb-4">
+											<img id="drinkImg" class="drinkPic" />
+										</figure>
+									</div>
+									<div class="column is-6 drink is-vcentered">
+										<h2 id="drinkName" class="nameDrink has-text-left is-size-3-desktop is-size-5-mobile has-text-weight-semibold"></h2>
+										<p class="has-text-weight-semibold is-size-5-tablet is-size-6-mobile">Ingredients</p>
+										<div id="ingredients" class="ingList"></div>
+										<br>
+										<p class="has-text-weight-semibold is-size-5-tablet is-size-6-mobile">Directions</p>
+										<div id="drink-recipe" class="drinkRec"></div>
+										<a class="button is-danger mt-4 has-text-black" id="rerun">Remix</a>
+										<!-- <div id="like-Btns" class="btn"></div> -->
+									</div>
+									<span class="pt-5 pr-6"><i onclick="toggleFavorite(this)" class="far fa-star" id="fave-icon"></i></span>
+								</div>
+							</div>	
+						<div class="column is-2"></div>
+					</div>
+				</div>
+			</section>
+
+        <!-- FOOTER -->
+		<footer class="footer">
+			<div class="content has-text-centered">
+				<p class="is-size-6-tablet is-size-7-mobile foot">
+				  Movie Mixer by R+M Designs &#124; All Rights Reserved. &#124; <a class="footLink has-text-white" href="/contact-us.html">Contact Us</a>
+				</p>
+			  </div>
+		  </footer>
 
 	<!-- Scripts -->
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script src="Assets/js/drinksscript.js"></script>
-    <script src="assets/js/script.js"></script>
+    	<script src="assets/js/script.js"></script>
+
 	</body>
-
-	<!-- FOOTER -->
-	<footer class="footer">
-		<div class="content has-text-centered">
-			<p class="is-size-6">
-				<strong>Movie Mixer</strong> by R+M Designs &#124; All Rights Reserved &#124; <a href="/contact-us.html">Contact Us</a>
-			</p>
-		</footer>
-
 </html>

@@ -13,39 +13,40 @@
     src="https://kit.fontawesome.com/f78f1848e0.js"
     crossorigin="anonymous"
   ></script>
+  <link rel="icon" type="image/jpeg" href="/assets/images/favicon.jpeg"/>
     <title>Movie Mixer</title>
   </head>
 
   <body>
     <!-- HEADER/NAVBAR --> 
-    <nav class="navbar is-transparent mx-6" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-white px-3" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <a class="navbar-item" href="index.html">
-          <img src="assets/images/logo4.svg" alt="mm-logo" width="112" height="28">
+          <img src="assets/images/favicon.jpeg" alt="mm-logo" width="30" height="30">
         </a>
     
         <a role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true" class="has-text-white"></span>
-          <span aria-hidden="true" class="has-text-white"></span>
-          <span aria-hidden="true" class="has-text-white"></span>
+          <span aria-hidden="true" class="has-text-black"></span>
+          <span aria-hidden="true" class="has-text-black"></span>
+          <span aria-hidden="true" class="has-text-black"></span>
         </a>
       </div>
 
-    <!-- Nav Bar tabs-->
+      <!-- Nav Bar tabs-->
       <div id="nav-links" class="navbar-menu">
-        <div class="navbar-end">
-          <a href="index.html" class="navbar-item is-size-5-tablet has-text-grey-light">Home</a>
-          <a href="movie.html" class="navbar-item is-size-5-tablet has-text-grey-light">Theater</a>
-          <a href="drink.html" class="navbar-item is-size-5-tablet has-text-grey-light">Bar</a>
-    
-    <!-- Streaming Services Dropdown-->
+        <div class="navbar-end is-uppercase is-size-6">
+            <a href="index.html" class="navbar-item has-text-black">Home</a>
+            <a href="movie.html" class="navbar-item has-text-black">Theater</a>
+            <a href="drink.html" class="navbar-item has-text-black">Bar</a>
+      
+          <!-- Streaming Services Dropdown-->
           <div class="navbar-item has-dropdown is-hoverable">
-            <a class="navbar-link is-arrowless is-size-5-tablet has-text-grey-light">
-              Streaming Services
-            </a>
+              <a class="navbar-link is-arrowless is-size-6 has-text-black">
+                Streaming Services
+              </a>
 
             <div class="navbar-dropdown">
-              <a href="https://www.netflix.com/" class="navbar-item">Neflix</a>
+              <a href="https://www.netflix.com/" class="navbar-item">Netflix</a>
               <a href="https://www.hulu.com/" class="navbar-item">Hulu</a>
               <a href="https://www.hbomax.com/"class="navbar-item">HBO Max</a>
               <a href ="https://www.youtube.com/"class="navbar-item">Youtube</a>
@@ -58,14 +59,66 @@
     <!-- HERO -->
     <section class="hero is-primary homePage is-medium is-link">
       <div class="hero-body">
-        <h1 class="title is-size-1-desktop has-text-centered is-size-3-mobile">M O V I E M I X E R</h1>
-        <p class="subtitle has-text-centered is-size-5-mobile">
-          Lights Out for a Night In
-        </p>
-        <p class="subtitle has-text-centered is-size-5-mobile">Indecisive on what to watch? Let us help! And why not top it off with a drink?! We've got some pretty tasty suggestion!</p>
-        <p>
+        <div class="column is-5">
+        <h1 class="title is-size-1-desktop has-text-left is-size-3-mobile px-6">M O V I E M I X E R</h1>
+        </div>
+        <div class="column is-6">
+          <p class="subtitle has-text-left is-size-7-mobile px-6 has-text-grey-dark">
+            Lights Out for a Night In
+            <br><br>
+            Indecisive on what to watch? <br>
+            Tired of the same old beer and cocktail?<br>
+            Let us make the hard decisions. 
+            </p>
+          <p>    
+        </div>
+      </div>  
+    </section>
+
+    <!-- Join Us form/modal -->
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-5 joinClub">
+            <p class="joinUs is-size-3-desktop is-size-4-mobile has-text-weight-bold has-text-danger">Join Our Couch Party!</p>
+            <br>
+            <p class="clubInfo is-size-5-desktop is-size-6-mobile has-text-white">Earn rewards such as movie passes once the world is safe again.  Stay up to date on new movie releases and lit drinks that will grow you a chest hair. Yes, just one.<br><br>Sign up and become...one of us! One of us!</p>
+          </div>
+          <div class="column is-2">
+          </div>
+          <div class="column is-3 is-vertical-center">
+            <button class="button is-danger is-hoverable has-text-black" id="signup">Sign Up</button>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content has-background-white py-5 px-5">
+        <h3 class="title mb-6 is-size-4-mobile has-text-centered">Almost there! Fill in the info below:</h3>
+        <form>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input is-rounded" type="text" placeholder="First Name">
+              <span class="icon is-small is-left">
+              <i class="fas fa-file-signature"></i>
+              </span>
+            </p>
+          </div>
+          <div class="field">
+            <p class="control has-icons-left has-icons-right">
+              <input class="input is-rounded" type="email" placeholder="Email">
+              <span class="icon is-small is-left">
+                <i class="fas fa-envelope"></i>
+              </span>
+            </p>
+          </div>
+            <button class="button is-success mt-4">Submit</button>
+        </form>
+      </div>
+    </div>
 
     <!-- Application info -->
     <!-- Theater -->
@@ -109,58 +162,12 @@
       </div>
     </section>
 
-        <!-- Join Us form/modal -->
-        <section class="section">
-          <div class="container ">
-            <div class="columns">
-              <div class="column is-1">
-              </div>
-              <div class="column is-5 has-text-white">
-                <p class="joinUs is-size-4-tablet is-size-5-mobile has-text-weight-bold">Join Our Couch Party!</p>
-                <br>
-                <p class="clubInfo is-size-5-desktop is-size-6-mobile">Earn rewards such as movie passes once the world is safe again.  Stay up to date on new movie releases and lit drinks that will grow you a chest hair. Yes, just one.<br><br>Sign up and become...one of us! One of us!</p>
-              </div>
-              <div class="column is-2">
-                <button class="button mt-6 is-warning is-light is-outlined is-hoverable" id="signup">Sign Up</button>
-              </div>
-              <div class="column is-2">
-              </div>
-            </div>
-          </div>
-        </section>
-    
-        <!-- Modal -->
-        <div class="modal">
-          <div class="modal-background"></div>
-          <div class="modal-content has-background-white py-5 px-5">
-            <h3 class="title mb-6 is-size-4-mobile has-text-centered">Almost there! Fill in the info below:</h3>
-            <form>
-              <div class="field">
-                <p class="control has-icons-left has-icons-right">
-                  <input class="input is-rounded" type="text" placeholder="First Name">
-                  <span class="icon is-small is-left">
-                  <i class="fas fa-file-signature"></i>
-                  </span>
-                </p>
-              </div>
-              <div class="field">
-                <p class="control has-icons-left has-icons-right">
-                  <input class="input is-rounded" type="email" placeholder="Email">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </p>
-              </div>
-                <button class="button is-success mt-4">Submit</button>
-            </form>
-          </div>
-        </div>
 
     <!-- FOOTER -->
     <footer class="footer">
       <div class="content has-text-centered">
-          <p class="is-size-6">
-            Movie Mixer by R+M Designs &#124; All Rights Reserved &#124; <a href="/contact-us.html">Contact Us</a>
+          <p class="is-size-6-tablet is-size-7-mobile foot">
+            Movie Mixer by R+M Designs &#124; All Rights Reserved. &#124; <a class="footLink has-text-white" href="/contact-us.html">Contact Us</a>
           </p>
         </div>
     </footer>
