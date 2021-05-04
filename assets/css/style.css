@@ -61,10 +61,10 @@ p.drinkDropDown.has-text-centered {
     border-bottom: 4px yellow;
 }
 
-.dropdown {
+.dropdown.drink {
     width: 100%;
   }
-  .dropdown-trigger {
+  .dropdown-trigger.drink {
     width: 100%;
   }
   .button.drinkDrop {

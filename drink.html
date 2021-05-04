@@ -67,68 +67,82 @@
 
 
 		<!-- DRINKS PAGE -->
-		<section class="section">
+		<div class="subheader">
 			<div class="container">
-				<div class="columns">
-					<div class="column is-4">
-					</div>
-					<div class="column">
-						<p class="drinkDropDown has-text-centered has-text-weight-bold is-size-3-desktop has-text-white">Pick Your Poison</p>
-							<div class="dropdown">
-								<div class="dropdown-trigger">
-								<button
-									class="button drinkDrop"
-									onclick="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
-									onblur="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
-									aria-haspopup="true"
-									aria-controls="dropdown-menu">
-									<span>Select</span>
-									<span class="icon is-small">
-										<i class="fas fa-angle-down" aria-hidden="true"></i>
-									</span>
-								</button>
-							</div>
-							<div class="dropdown-menu" id="dropdown-menu2" role="menu">
-								<div class="dropdown-content">
-									<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item tequila">Tequila</a>
-									<a href="#" onmousedown="javascript:getUserSelection(event);"class="dropdown-item rum">Rum</a>
-									<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item whiskey">Whiskey</a>
-									<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item gin">Gin</a>
-									<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item vodka">Vodka</a>
+			</div>
+		</div>
+			<section class="section">
+				<div class="container">
+					<div class="columns">
+						<div class="column is-4">
+						</div>
+						<div class="column">
+							<p class="drinkDropDown has-text-centered has-text-weight-bold is-size-3-desktop is-size-4-mobile has-text-danger pb-5">Find A Recipe</p>
+							<p class="drinkSubHead subtitle is-size-5-mobile has-text-white has-text-centered has-text-weight-medium">
+								Greetings, fellow mixologist. 
+								 <br>Select your
+								liquor of choice from the topshelf and let's get to shaking.
+							</p>
+							<div class="dropdown drink my-5">
+								<div class="dropdown-trigger drink">
+									<button
+										class="button drinkDrop"
+										onclick="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
+										onblur="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
+										aria-haspopup="true"
+										aria-controls="dropdown-menu">
+										<span>Pick Your Poison</span>
+										<span class="icon is-small">
+											<i class="fas fa-angle-down" aria-hidden="true"></i>
+										</span>
+									</button>
+								</div>
+								<div class="dropdown-menu" id="dropdown-menu2" role="menu">
+									<div class="dropdown-content">
+										<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item tequila">Tequila</a>
+										<a href="#" onmousedown="javascript:getUserSelection(event);"class="dropdown-item rum">Rum</a>
+										<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item whiskey">Whiskey</a>
+										<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item gin">Gin</a>
+										<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item vodka">Vodka</a>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="column is-4">
+						<div class="column is-4"></div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
 
 
-				<!-- Display drink data after User selection-->
-		<section class="section drinkInfo">
-			<div class="container box">
-				<div class="drink-display" id="drink-display">
-					<h2 id="drinkName" class="nameDrink has-text-centered is-size-3-desktop is-size-5-mobile"></h2>
-				</div>
-				<div class="columns">
-						<div class="column is-8">
-						<figure class="image drink">
-							<img id="drinkImg" class="drinkPic" />
-						</figure>
+				<!-- Display drinkdata after User selection-->
+			<section class="section drinkInfo">
+				<div class="container drink">
+					<div class="columns">
+						<div class="column is-2"></div>
+							<div class="container column box is-8">
+								<div class="columns drink">
+									<div class="columnis-2">
+										<figure class="image drink is-vcentered px-4 pb-4">
+											<img id="drinkImg" class="drinkPic" />
+										</figure>
+									</div>
+									<div class="column is-6 drink is-vcentered">
+										<h2 id="drinkName" class="nameDrink has-text-left is-size-3-desktop is-size-5-mobile has-text-weight-semibold"></h2>
+										<p class="has-text-weight-semibold is-size-5-tablet is-size-6-mobile">Ingredients</p>
+										<div id="ingredients" class="ingList"></div>
+										<br>
+										<p class="has-text-weight-semibold is-size-5-tablet is-size-6-mobile">Directions</p>
+										<div id="drink-recipe" class="drinkRec"></div>
+										<a class="button is-danger mt-4 has-text-black" id="rerun">Remix</a>
+										<!-- <div id="like-Btns" class="btn"></div> -->
+									</div>
+									<span class="pt-5 pr-6"><i onclick="toggleFavorite(this)" class="far fa-star" id="fave-icon"></i></span>
+								</div>
+							</div>	
+						<div class="column is-2"></div>
 					</div>
-					<div class="column is-4">
-						<span><i onclick="toggleFavorite(this)" class="far fa-star" id="fave-icon"></i></span>
-						<div id="ingredients" class="ingList"></div>
-						<div id="drink-recipe" class="drinkRec"></div>
-						<div id="like-Btns" class="btn"></div>
-					</div>
 				</div>
-					<a class="button is-danger" id="rerun">Remix</a>
-				</div>	
-			</div>
-		</section>
+			</section>
 
         <!-- FOOTER -->
 		<footer class="footer">
