@@ -6,6 +6,8 @@ var movieChoice = {};
 var movieResultEl = document.querySelector("#movie-display");
 var rerunBtnEl = document.querySelector("#rerun");
 let favoriteEl = document.querySelector("#fave-icon");
+var saveBtnEl = document.querySelector("#saverun");
+
 
 //grab user input from drop down for movie service selector
 var getUserSelection = function (event) {
@@ -94,4 +96,5 @@ function toggleFavorite(favorite) {
   }
   localStorage.setItem("savedMovies", JSON.stringify(favoriteArray));
 }
+
 fetchMovie();
