@@ -72,40 +72,71 @@
 		</section>
 
 		<!-- DRINKS PAGE -->
-		<div class="dropdown">
-			<div class="dropdown-trigger">
-				<button
-					class="button"
-					onclick="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
-					onblur="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
-					aria-haspopup="true"
-					aria-controls="dropdown-menu"
->
-					<span>Pick Your Poisin</span>
-					<span class="icon is-small">
-						<i class="fas fa-angle-down" aria-hidden="true"></i>
-					</span>
-				</button>
-			</div>
-			<div class="dropdown-menu" id="dropdown-menu2" role="menu">
-				<div class="dropdown-content">
-					<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">Tequila</a>
-					<a href="#" onmousedown="javascript:getUserSelection(event);"class="dropdown-item">Rum</a>
-					<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">Whiskey</a>
-					<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">Gin</a>
-					<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">Vodka</a>
+		<section class="section">
+			<div class="container">
+				<div class="columns">
+					<div class="column is-4">
+					</div>
+					<div class="column">
+						<p class="drinkDropDown has-text-centered has-text-weight-bold is-size-3-desktop has-text-white">Pick Your Poison</p>
+							<div class="dropdown">
+								<div class="dropdown-trigger">
+								<button
+									class="button drinkDrop"
+									onclick="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
+									onblur="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
+									aria-haspopup="true"
+									aria-controls="dropdown-menu">
+									<span>Select</span>
+									<span class="icon is-small">
+										<i class="fas fa-angle-down" aria-hidden="true"></i>
+									</span>
+								</button>
+							</div>
+							<div class="dropdown-menu" id="dropdown-menu2" role="menu">
+								<div class="dropdown-content">
+									<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item tequila">Tequila</a>
+									<a href="#" onmousedown="javascript:getUserSelection(event);"class="dropdown-item rum">Rum</a>
+									<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item whiskey">Whiskey</a>
+									<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item gin">Gin</a>
+									<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item vodka">Vodka</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="column is-4">
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="drink-display" id="drink-display">
-			<i onclick="toggleFavorite(this)" class="far fa-star" id="fave-icon"></i>
-			<img id="drinkImg" class="drinkPic" />
-			<h2 id="drinkName" class="nameDrink"></h2>
-			<div id="ingredients" class="ingList"></div>
-				<div id="drink-recipe" class="drinkRec"></div>
-			<div id="like-Btns" class="btn"></div>
-			<a class="button is-danger is-outlined" id="rerun">hail nah</a>
-		</div>
+		</section>
+
+
+				<!-- Display drink data after User selection-->
+		<section class="section drinkInfo">
+			<div class="container box">
+				<div class="drink-display" id="drink-display">
+					<h2 id="drinkName" class="nameDrink has-text-centered is-size-3-desktop is-size-5-mobile"></h2>
+				</div>
+				<div class="columns">
+						<div class="column is-8">
+						<figure class="image drink">
+							<img id="drinkImg" class="drinkPic" />
+						</figure>
+					</div>
+					<div class="column is-4">
+						<span><i onclick="toggleFavorite(this)" class="far fa-star" id="fave-icon"></i></span>
+						<div id="ingredients" class="ingList"></div>
+						<div id="drink-recipe" class="drinkRec"></div>
+						<div id="like-Btns" class="btn"></div>
+					</div>
+				</div>
+					<a class="button is-danger" id="rerun">Remix</a>
+				</div>	
+			</div>
+		</section>
+
+
+	<!-- Scripts -->
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script src="Assets/js/drinksscript.js"></script>
     <script src="assets/js/script.js"></script>

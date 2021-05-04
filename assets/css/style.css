@@ -37,6 +37,15 @@ section.hero.drink.is-medium {
     background-position: center; 
 }
 
+img.drinkPic {
+    padding-top: 25px;
+    width: 50%;
+    height: auto;
+  }
+
+section.section.drinkInfo {
+    font-family: 'Cardo', serif;
+}
 
 /* CONTACT US STYLING */
 section.hero.is-primary.is-small.contact {
