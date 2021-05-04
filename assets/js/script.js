@@ -15,7 +15,7 @@ const modal = document.querySelector('.modal');
 console.log(signupButton.innerHTML)
 
 signupButton.addEventListener('click', () =>{
-    console.log('test');
+    //console.log('test');
     modal.classList.add('is-active');
 });
 
