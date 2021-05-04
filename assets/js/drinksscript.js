@@ -1,5 +1,5 @@
 //VARIABLES
-let favoriteArray = [];
+let favoriteDrinkArray = new Array(4).fill("");
 let drink = {};
 var userInput;
 var drinkResultEl = document.querySelector("#drink-display");
@@ -126,10 +126,9 @@ var toggleFavorite = function (favorite) {
   console.log(favoriteEl);
 
   if (favoriteEl.classList.contains("fas")) {
-    favoriteArray.push(drink);
-    console.log(favoriteArray);
+    favoriteDrinkArray.push(drink);
+    console.log(favoriteDrinkArray);
   }
-  localStorage.setItem("savedDrinks", JSON.stringify(favoriteArray));
+  localStorage.setItem("savedDrinks", JSON.stringify(favoriteDrinkArray));
 };
 
-//display saved Drinks
