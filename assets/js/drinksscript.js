@@ -68,9 +68,7 @@ var getDrinkInstr = function (id) {
 
 //Display Drink data
 var displayDrink = function (drink) {
-  // console.log("test this");
-  // console.log(drink);
-
+  $("#drink-container").removeClass("hidden");
   $("#drinkImg").attr("src", drink.img);
   $("#drinkName").text(drink.name);
   $("#drink-recipe").text(drink.instruction);
