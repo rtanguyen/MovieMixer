@@ -47,6 +47,12 @@ section.section.drinkInfo {
     font-family: 'Cardo', serif;
 }
 
+/* FOOTER STYLING */
+footer.footer {
+    background-color: #070C25;
+    height: 20px;
+}
+
 /* CONTACT US STYLING */
 section.hero.is-primary.is-small.contact {
     font-family: 'Quicksand', sans-serif;
