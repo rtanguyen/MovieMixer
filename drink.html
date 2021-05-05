@@ -46,10 +46,10 @@
 						</a>
 
 					<div class="navbar-dropdown">
-						<a href="https://www.netflix.com/" class="navbar-item">Netflix</a>
-						<a href="https://www.hulu.com/" class="navbar-item">Hulu</a>
-						<a href="https://www.hbomax.com/"class="navbar-item">HBO Max</a>
-						<a href ="https://www.youtube.com/"class="navbar-item">Youtube</a>
+						<a href="https://www.netflix.com/" class="navbar-item" target="_blank">Netflix</a>
+						<a href="https://www.hulu.com/" class="navbar-item" target="_blank">Hulu</a>
+						<a href="https://www.hbomax.com/"class="navbar-item" target="_blank">HBO Max</a>
+						<a href ="https://www.youtube.com/"class="navbar-item" target="_blank">Youtube</a>
 					</div>
 					</div>
 				</div>
@@ -91,7 +91,7 @@
 										onblur="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
 										aria-haspopup="true"
 										aria-controls="dropdown-menu">
-										<span>Pick Your Poison</span>
+										<span id="pypID">Pick Your Poison</span>
 										<span class="icon is-small">
 											<i class="fas fa-angle-down" aria-hidden="true"></i>
 										</span>
@@ -143,6 +143,11 @@
 					</div>
 				</div>
 			</section>
+
+			<!-- Drink Message -->
+			<div class="drinkMsg">
+				<p class="is-size-7 has-text-right has-text-grey-light px-3">Please drink responsibly. Must be 21+</p>
+			</div>
 
         <!-- FOOTER -->
 		<footer class="footer">
