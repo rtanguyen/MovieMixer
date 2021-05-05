@@ -13,6 +13,8 @@ var getUserSelection = function (event) {
   userInput = event.target.innerText.trim();
   console.log(userInput);
   randomDrink(userInput);
+
+  document.querySelector("#pypID").innerHTML = userInput
 };
 
 //pick cocktail based on user input, grab drink ID
