@@ -26,32 +26,15 @@ h1.title.is-size-1-desktop:hover {
     transform: rotateY(150deg);
 }
 
-/* img.homeDrinkImg:hover{
+img.homeDrinkImg:hover{
     src: url("/assets/images/movie1.jpg");
-} */
+}
 
 /* DRINKS STYLING */
 section.hero.drink.is-medium {
     background-image: url("../images/edgar-chaparro-Lwx-q6OdGAc-unsplash.jpg");
     background-size: cover;
     background-position: center; 
-}
-
-img.drinkPic {
-    padding-top: 25px;
-    width: 50%;
-    height: auto;
-  }
-
-section.section.drinkInfo {
-    font-family: 'Cardo', serif;
-}
-
-/* CONTACT US STYLING */
-section.hero.is-primary.is-small.contact {
-    font-family: 'Quicksand', sans-serif;
-    background-image: url("../images/background2.jpg");
-    top: 50%;
 }
 
 /* Movie Styling */
@@ -81,20 +64,6 @@ section.hero.movie.is-medium {
     font-size: larger;
     font-weight: bold;
 }
-
-.nameDrink {
-    color: white;
-}
-
-.ingList {
-    color: white;
-}
-
-.drinkRec {
-    color: white;
-}
-
-
 /* movie page */
 .movie-display {
     color: white;
@@ -158,4 +127,3 @@ section.hero.movie.is-medium {
 .rewindBtn {
     height: unset;
 }
-
