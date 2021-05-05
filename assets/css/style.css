@@ -1,3 +1,8 @@
+/* ALL PAGES */
+.hidden {
+    display: none;
+}
+
 .navbar {
     background-color: transparent;
     color: #000;
@@ -10,15 +15,16 @@ body {
     background-image: url("../images/background2.jpg");
     position: -webkit-sticky; 
     position: sticky;
+    background-size: cover;
 }
 
 section.hero.is-primary.homePage {
     background-image: url("../images/hero-image.jpg");
     background-size: cover;
     background-position: center;    
-    position: -webkit-sticky; 
+    /* position: -webkit-sticky; 
     position: sticky;
-    top: 0;
+    top: 0; */
     color: #000;
 }
 
@@ -30,6 +36,15 @@ h1.title.is-size-1-desktop:hover {
     src: url("/assets/images/movie1.jpg");
 } */
 
+button.button.is-danger.is-hoverable {
+    align-items: baseline;
+}
+
+.is-vertical-center {
+    display: flex;
+    align-items: center;
+  }
+
 /* DRINKS STYLING */
 section.hero.drink.is-medium {
     background-image: url("../images/edgar-chaparro-Lwx-q6OdGAc-unsplash.jpg");
@@ -39,12 +54,46 @@ section.hero.drink.is-medium {
 
 img.drinkPic {
     padding-top: 25px;
-    width: 50%;
+    width: 100%;
     height: auto;
   }
 
-section.section.drinkInfo {
+/* section.section.drinkInfo {
     font-family: 'Cardo', serif;
+} */
+
+p.drinkDropDown.has-text-centered {
+    border-bottom: 4px yellow;
+}
+
+.dropdown.drink {
+    width: 100%;
+  }
+  .dropdown-trigger.drink {
+    width: 100%;
+  }
+  .button.drinkDrop {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+
+  .dropdown-menu {
+    width: 100%;
+  }
+
+  .button.is-danger {
+    width: 240px;
+  }
+
+/* FOOTER STYLING */
+footer.footer {
+    background-color: #070C25;
+    height: 20px;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 /* CONTACT US STYLING */
@@ -81,6 +130,8 @@ section.hero.movie.is-medium {
     font-size: larger;
     font-weight: bold;
 }
+
+
 /* movie page */
 .movie-display {
     color: white;
@@ -115,7 +166,7 @@ section.hero.movie.is-medium {
 }
 
 .rewindFooter {
-    background-image: url(/assets/images/background2.jpg);
+    background-image: url(../images/background2.jpg);
     position: relative;
     width: 100%;
     height: 100%;

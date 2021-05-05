@@ -62,29 +62,32 @@
           Past Drank Selections <i class="fas fa-cocktail"></i>
       </p>
       <div class="container">
-          <div class="columns is-flex">
-              <div class="column is-3 mt-5 drinkFavorites">
+          <div class="columns is-flex" id="drinkFavorites-container">
+            <div id="addDrinkFavorite">
+              <p>You do not have any drinks saved to your favorites.</p>
+            </div>
+              <div class="column is-3 mt-5 drinkFavorites hidden" id="drinkFave0">
                   <!--Place Holder-->
-                  <img src="https://www.fillmurray.com/200/300" alt="place filler"/>
-                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ere est ipsum dolores in tenetur, ut, ullam numquam distinctio dolorum voluptatibus suscipit sit veniam unde aut earum?</p>
+                  <!-- <img src="https://www.fillmurray.com/200/300" alt="place filler"/>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ere est ipsum dolores in tenetur, ut, ullam numquam distinctio dolorum voluptatibus suscipit sit veniam unde aut earum?</p> -->
 
                   <!--Favorite Drink Appended here-->
                 </div>
-              <div class="column is-3 mt-5 is-success drinkFavorites">
+              <div class="column is-3 mt-5 is-success drinkFavorites hidden" id="drinkFave1">
                    <!--Place Holder-->
                    <!-- <img src="https://www.fillmurray.com/200/300" alt="place filler"/>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ere est ipsum dolores in tenetur, ut, ullam numquam distinctio dolorum voluptatibus suscipit sit veniam unde aut earum?</p> -->
 
                 <!--Favorite Drink Appended here-->
                 </div>
-                <div class="column is-3 mt-5 is-success drinkFavorites">
+                <div class="column is-3 mt-5 is-success drinkFavorites hidden" id="drinkFave2">
                      <!--Place Holder-->
-                     <img src="https://www.fillmurray.com/200/300" alt="place filler"/>
-                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ere est ipsum dolores in tenetur, ut, ullam numquam distinctio dolorum voluptatibus suscipit sit veniam unde aut earum?</p>
+                     <!-- <img src="https://www.fillmurray.com/200/300" alt="place filler"/>
+                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ere est ipsum dolores in tenetur, ut, ullam numquam distinctio dolorum voluptatibus suscipit sit veniam unde aut earum?</p> -->
 
                 <!--Favorite Drink Appended here-->
                  </div>
-                <div class="column is-3 mt-5 is success drinkFavorites">
+                <div class="column is-3 mt-5 is success drinkFavorites hidden" id="drinkFave3">
                      <!-- Place Holder
                      <img src="https://www.fillmurray.com/200/300" alt="place filler"/>
                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ere est ipsum dolores in tenetur, ut, ullam numquam distinctio dolorum voluptatibus suscipit sit veniam unde aut earum?</p> -->
@@ -135,6 +138,10 @@
             </div>
         </div>
         </section>
+<!-- SCRIPTS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/favesscript.js"></script>
+        <script src="assets/js/drinksscript.js"></script>
     </body>
 
         <!-- FOOTER -->
