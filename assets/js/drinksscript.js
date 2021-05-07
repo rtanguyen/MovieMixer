@@ -1,5 +1,5 @@
 //VARIABLES
-let favoriteDrinkArray = new Array(4).fill("");
+let favoriteDrinkArray = [];
 let drink = {};
 var userInput;
 var drinkResultEl = document.querySelector("#drink-display");
@@ -13,6 +13,8 @@ var getUserSelection = function (event) {
   userInput = event.target.innerText.trim();
   console.log(userInput);
   randomDrink(userInput);
+
+  document.querySelector("#pypID").innerHTML = userInput
 };
 
 //pick cocktail based on user input, grab drink ID
@@ -68,9 +70,7 @@ var getDrinkInstr = function (id) {
 
 //Display Drink data
 var displayDrink = function (drink) {
-  // console.log("test this");
-  // console.log(drink);
-
+  $("#drink-container").removeClass("hidden");
   $("#drinkImg").attr("src", drink.img);
   $("#drinkName").text(drink.name);
   $("#drink-recipe").text(drink.instruction);
@@ -120,15 +120,21 @@ rerunBtnEl.addEventListener("click", function () {
   favoriteEl.classList.remove("fas");
 });
 
-//save favorite
+//toggle favorite
 var toggleFavorite = function (favorite) {
   favorite.classList.toggle("fas");
   console.log(favoriteEl);
-
-  if (favoriteEl.classList.contains("fas")) {
-    favoriteDrinkArray.push(drink);
-    console.log(favoriteDrinkArray);
-  }
+  saveFavorite(drink);
   localStorage.setItem("savedDrinks", JSON.stringify(favoriteDrinkArray));
 };
 
+//save favorite
+var saveFavorite = function(drink) {
+  if (favoriteEl.classList.contains("fas")) {
+    favoriteDrinkArray.push(drink);
+    console.log(favoriteDrinkArray);
+    //if user unstars drink, removes last object from array
+  } else if (favoriteEl.classList.contains("far")) {
+    favoriteDrinkArray.pop();
+}
+};
