@@ -2,12 +2,13 @@
 var userInput;
 let favoriteArray = [];
 var movieChoice = {};
-//dom elements
+//dom elements on movie html
 var movieResultEl = document.querySelector("#movie-display");
 var rerunBtnEl = document.querySelector("#rerun");
 let favoriteEl = document.querySelector("#fave-icon");
 var saveBtnEl = document.querySelector("#saverun");
-
+//dom elements on rewind html
+var favMovieEl = document.querySelector('.movieFavorites')
 
 //grab user input from drop down for movie service selector
 var getUserSelection = function (event) {
@@ -97,4 +98,29 @@ function toggleFavorite(favorite) {
   localStorage.setItem("savedMovies", JSON.stringify(favoriteArray));
 }
 
+//load favorites
+function loadFavoriteMovie() {
+  //gets item from local storage and saves to an array
+  favoriteMovieArr = JSON.parse(localStorage.getItem("savedMovies"));
+  console.log(favoriteMovieArr)
+  if (localStorage.getItem('savedMovies') != null){
+    displayFavoriteMovies();
+  }
+}
+
+function displayFavoriteMovies() {
+ for (var i=0; i < favoriteMovieArr.length; i++) {
+   var favMovieTitle = favoriteMovieArr[i].title
+   console.log(favMovieTitle)
+   //creates element
+   favMovieTitleDisplay.document.createElement('h3')
+   //grab from local storage
+   favMovieTitleDisplay.innerHTML = favMovieTitle
+  favMovieEl.appendChild(favMovieTitleDisplay)
+  // var favMovieImg = favoriteMovieArr[i]
+ }
+}
+
+
 fetchMovie();
+loadFavoriteMovie();

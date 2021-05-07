@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script
+    src="https://kit.fontawesome.com/f78f1848e0.js"
+    crossorigin="anonymous"
+  ></script>
+  <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpeg"/>
+    <title>Movie Mixer</title>
+  </head>
+
+  <body>
+    <!-- HEADER/NAVBAR --> 
+<nav class="navbar is-white px-3" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="index.html">
+        <img src="assets/images/favicon.jpeg" alt="mm-logo" width="30" height="30">
+        </a>
+    
+        <a role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true" class="has-text-black"></span>
+        <span aria-hidden="true" class="has-text-black"></span>
+        <span aria-hidden="true" class="has-text-black"></span>
+        </a>
+    </div>
+
+    <!-- Nav Bar tabs-->
+    <div id="nav-links" class="navbar-menu">
+        <div class="navbar-end is-uppercase is-size-6">
+            <a href="index.html" class="navbar-item has-text-black">Home</a>
+            <a href="movie.html" class="navbar-item has-text-black">Theater</a>
+            <a href="drink.html" class="navbar-item has-text-black">Bar</a>
+            <a href="about-us.html" class="navbar-item has-text-black">About Us</a>
+    
+        <!-- Streaming Services Dropdown-->
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link is-arrowless is-size-6 has-text-black">
+                Streaming Services
+            </a>
+
+            <div class="navbar-dropdown">
+            <a href="https://www.netflix.com/" class="navbar-item" target="_blank">Netflix</a>
+            <a href="https://www.hulu.com/" class="navbar-item" target="_blank">Hulu</a>
+            <a href="https://www.hbomax.com/"class="navbar-item" target="_blank">HBO Max</a>
+            <a href ="https://www.youtube.com/"class="navbar-item" target="_blank">Youtube</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </nav>
+
+
+  <!-- Hero -->
+  <section class="hero is-primary is-small contact is-link has-text-white is-transparent">
+    <div class="hero-body">
+        <p class="title is-size-1-desktop contactTitle has-text-centered has-text-white is-transparent"> About
+        </p>
+        <p class="subtitle has-text-centered is-size-5-desktop is-size-6-mobile has-text-white mt-4">We are a group of passionate developers. Here's how to find more of us.
+        </p>
+    </div>
+</section>
+<!--portfolio continaer-->
+<div class='portfolio-container columns is-flex'>
+    <!--portfolio cards-->
+    <div id="portfolio-card" class="column is-3 mt-5">
+        <h3 id="portfolio-title">Rebecca Nguyen</h3>
+            <ul id="portfolio-text">
+                <li>Set up Initial application html</li> 
+                <li>Built JavaScript logic for Drinks, Drinks Rewind page</li> 
+                <li>Built favorites feature (local storage)</li> 
+                <li>API research effort</li> 
+            </ul>
+        <a target="_blank" rel="noopener noreferrer" href="http://your_url_here.html">Check out their other work here!</a>
+    </div>
+
+    <div id="portfolio-card" class="column is-3 mt-5">
+        <h3 id="portfolio-title">Mimi Vo</h3>
+            <ul id="portfolio-text">
+                <li>Wireframe and Layout Design</li> 
+                <li>Researched and created application design i.e header, footer, styling, logo</li> 
+                <li>Designed and built Home, Drinks, Contact Us html and Script.js</li> 
+            </ul>
+        <a target="_blank" rel="noopener noreferrer" href="http://your_url_here.html">Check out their other work here!</a>
+    </div>
+
+    <div id="portfolio-card" class="column is-3 mt-5">
+        <h3 id="portfolio-title">Ryan Armstrong</h3>
+            <ul id="portfolio-text">
+                <li>Developed application content</li> 
+                <li>Designed and built Theater and Rewind service pages</li> 
+                <li>Design research effort </li> 
+            </ul>
+        <a target="_blank" rel="noopener noreferrer" href="http://your_url_here.html">Check out their other work here!</a>
+    </div>
+
+    <div id="portfolio-card" class="column is-3 mt-5">
+        <h3 id="portfolio-title">Ronnie Rios</h3>
+            <ul id="portfolio-text">
+                <li>Built JavaScript logic for Theater and Movie Rewind</li> 
+                <li>Built initial Theater html </li> 
+                <li>Led API research effort</li> 
+            </ul>
+        <a target="_blank" rel="noopener noreferrer" href="https://ronnie-rios.github.io/portfolio/">Check out their other work here!</a>
+    </div>
+</div>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="content has-text-centered">
+        <p class="is-size-6-tablet is-size-7-mobile foot">
+            Movie Mixer by R+M Designs &#124; All Rights Reserved. &#124; <a class="footLink has-text-white" href="/contact-us.html">Contact Us</a>
+        </p>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src='assets/js/moviescript.js'></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+          
