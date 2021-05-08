@@ -13,6 +13,10 @@
     height: 450px;
 }
 
+.verticalSpacerBig {
+    height: 650px;
+}
+
 .verticalSpacerSm {
     height: 200px;
 }
