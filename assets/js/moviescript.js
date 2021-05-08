@@ -8,7 +8,7 @@ var rerunBtnEl = document.querySelector("#rerun");
 let favoriteEl = document.querySelector("#fave-icon");
 var saveBtnEl = document.querySelector("#saverun");
 //dom elements on rewind html
-var favMovieEl = document.querySelector('.movieFavorites')
+var favMovieEl = document.querySelector('#movie-favorites')
 
 //grab user input from drop down for movie service selector
 var getUserSelection = function (event) {
@@ -113,10 +113,10 @@ function displayFavoriteMovies() {
    var favMovieTitle = favoriteMovieArr[i].title
    console.log(favMovieTitle)
    //creates element
-   favMovieTitleDisplay.document.createElement('h3')
+    const favMovieTitleDisplay = document.createElement('h3')
    //grab from local storage
    favMovieTitleDisplay.innerHTML = favMovieTitle
-  favMovieEl.appendChild(favMovieTitleDisplay)
+    favMovieEl.appendChild(favMovieTitleDisplay)
   // var favMovieImg = favoriteMovieArr[i]
  }
 }
@@ -124,3 +124,4 @@ function displayFavoriteMovies() {
 
 fetchMovie();
 loadFavoriteMovie();
+displayFavoriteMovies();
