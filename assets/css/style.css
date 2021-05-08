@@ -9,6 +9,10 @@
 
 }
 
+.verticalSpacer {
+    height: 450px;
+}
+
 /* HOME PAGE STYLING */
 body {
     font-family: 'Quicksand', sans-serif;
