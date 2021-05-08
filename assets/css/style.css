@@ -196,3 +196,12 @@ section.hero.movie.is-medium {
     height: unset;
 }
 
+/*about styling*/
+#portfolio-card {
+    background-color: white;
+    padding: 20px;
+    border-style: outset;
+    border-width: 5px;
+    align-items: center;
+}
+
