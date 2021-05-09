@@ -19,12 +19,8 @@ var loadFavorites = function() {
         drinkFaveContainer.append(drinkFaveImg);
         let drinkFaveName = $("<h4>")
         drinkFaveName.text(favoriteDrinkArray[i].name).appendTo(drinkFaveContainer);
-      }
-  }
-  }
-​
-​
-  //load favorite movies
+      }}}
+//load favorite movies
 var loadFavoriteMovie = function() {
   //gets item from local storage and saves to an array
   favoriteMovieArr = JSON.parse(localStorage.getItem("savedMovies"));
@@ -32,21 +28,18 @@ var loadFavoriteMovie = function() {
   if(favoriteMovieArr) {
     $("#addMovieFavorite").addClass("hidden");
     displayMovieFavorites();
-  }
-}
-​
+  }}
+//renders from local storage​
 var displayMovieFavorites = function() {
  for (var i=0; i < favoriteMovieArr.length; i++) {
-   let movieFaveContainer = $("#movieFave" + i);
+  if (favoriteMovieArr[i]) {
+  let movieFaveContainer = $("#movieFave" + i);
    movieFaveContainer.removeClass("hidden");
    let movieFaveImg = $("<img>")
    movieFaveImg.attr("src", favoriteMovieArr[i].imageurl[0]).appendTo(movieFaveContainer);
    console.log(favoriteMovieArr[i].imageurl[0]);
    let movieFaveName =  $("<h4>")
    movieFaveName.text(favoriteMovieArr[i].title).appendTo(movieFaveContainer);
-​
- }
-}
-​
+  }}}
 loadFavorites();
 loadFavoriteMovie();

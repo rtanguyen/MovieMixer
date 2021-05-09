@@ -132,6 +132,11 @@ section.hero.is-primary.is-small.contact {
     top: 50%;
 }
 
+button.button.movieDrop {
+    width: 100%;
+    justify-content: space-between;
+}
+
 /* Movie Styling */
 section.hero.movie.is-medium {
  background-color: transparent;
