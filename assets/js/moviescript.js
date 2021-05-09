@@ -89,9 +89,9 @@ rerunEl.addEventListener("click", function () {
 //save favorite
 function toggleFavorite(favorite) {
   favorite.classList.toggle("fas");
-  console.log(favoriteEl);
+  console.log(favoriteBtnEl);
 
-  if (favoriteEl.classList.contains("fas")) {
+  if (favoriteBtnEl.classList.contains("fas")) {
     favoriteArray.push(movieChoice);
     console.log(favoriteArray);
   }
@@ -99,11 +99,11 @@ function toggleFavorite(favorite) {
 }
 //save favorite to favoriteMovieArr
 function savedFavoriteMovie(movie) {
-   if (favoriteEl.classList.contains("fas")) {
+   if (favoriteBtnEl.classList.contains("fas")) {
     favoriteMovieArr.push(movie);
-    // console.log(favoriteMovieArr);
+    console.log(favoriteMovieArr);
     //if user unstars drink, removes last object from array
-  } else if (favoriteEl.classList.contains("far")) {
+  } else if (favoriteBtnEl.classList.contains("far")) {
     favoriteMovieArr.pop();
 }
 };
