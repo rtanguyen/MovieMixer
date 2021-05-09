@@ -162,6 +162,13 @@ section.hero.movie.is-medium {
 
 
 /* movie page */
+
+section.hero.is-primary.is-medium.movie {
+    background-image: url("../images/theater.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
 .movie-display {
     color: white;
     font-size: larger;
