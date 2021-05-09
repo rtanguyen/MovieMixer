@@ -175,17 +175,27 @@ section.hero.is-primary.is-medium.movie {
 }
 
 .movie-display {
-    color: white;
+    color: black;
     font-size: larger;
     /* font-weight: bold; */
-    padding-top: 130px;
+    text-align: center;
+}
+
+h2.movie-title {
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+p.movie-description {
+    text-align: left;
 }
 
 .movie-display.h2 {
-    color: white;
+    color: black;
     font-size: larger;
     font-weight: bold;
-    justify-content: center;
 }
 
 .far.fa-star.fas {

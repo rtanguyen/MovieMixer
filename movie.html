@@ -130,14 +130,14 @@
 
 
 		<!--contianer to hold movie display and buttons-->
-		<section class="section">
-			<div class="columns">
+		<section class="section hidden">
+			<div class="columns is-centered">
 				<div class="column is-2"></div>
-				<div class="movie-container is-8">
+				<div class="movie-container is-8 box">
 					<div class="movie-display" id="movie-display">
 						<!--appended elements will display here-->
 					</div>
-					<div id="like-Btns" class="btn"></div>
+					<div id="like-Btns" class="btn is-centered"></div>
 						<a class="button is-danger mt-4 has-text-black" id="rerun">Next Flick</a>
 						<i onclick="toggleFavorite(this)" class="far fa-star" id="fave-icon"></i>
 				</div>
@@ -145,6 +145,13 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- Move to Bar CTA -->
+		<div class="nextPage">
+			<a href="drink.html"><button class="button is-warning is-hoverable has-text-black is-pulled-right" id="moveToDrink">Let's Make a Drink</button></a>
+		</div>
+
+		<div class="verticalSpacer"></div>
 
 		<!-- <div class="movie-container">
 			<div class="movie-display" id="movie-display"> -->
