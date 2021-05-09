@@ -92,6 +92,8 @@ function renderMoviesData(movieChoice) {
 rerunEl.addEventListener("click", function () {
   $("#movie-display").empty();
   fetchMovie(userInput);
+  favoriteBtnEl.classList.add("far");
+  favoriteBtnEl.classList.remove("fas");
 });
 
 //save favorite
