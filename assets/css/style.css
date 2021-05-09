@@ -132,6 +132,11 @@ section.hero.is-primary.is-small.contact {
     top: 50%;
 }
 
+button.button.movieDrop {
+    width: 100%;
+    justify-content: space-between;
+}
+
 /* Movie Styling */
 section.hero.movie.is-medium {
  background-color: transparent;
@@ -162,6 +167,13 @@ section.hero.movie.is-medium {
 
 
 /* movie page */
+
+section.hero.is-primary.is-medium.movie {
+    background-image: url("../images/theater.jpg");
+    background-size: cover;
+    background-position: center; 
+}
+
 .movie-display {
     color: white;
     font-size: larger;
@@ -173,6 +185,7 @@ section.hero.movie.is-medium {
     color: white;
     font-size: larger;
     font-weight: bold;
+    justify-content: center;
 }
 
 .far.fa-star.fas {
