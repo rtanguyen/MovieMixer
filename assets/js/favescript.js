@@ -14,8 +14,11 @@ var loadFavorites = function() {
       if(favoriteDrinkArray[i]) {
         let drinkFaveContainer = $("#drinkFave" + i)
         drinkFaveContainer.removeClass("hidden");
-        let drinkFaveImg = $("<img>").attr("src", favoriteDrinkArray[i].img).appendTo(drinkFaveContainer);
-        let drinkFaveName = $("<h4>").text(favoriteDrinkArray[i].name).appendTo(drinkFaveContainer);
+        let drinkFaveImg = $("<img>")
+        drinkFaveImg.attr("src", favoriteDrinkArray[i].img)
+        drinkFaveContainer.append(drinkFaveImg);
+        let drinkFaveName = $("<h4>")
+        drinkFaveName.text(favoriteDrinkArray[i].name).appendTo(drinkFaveContainer);
       }
   }
   }
@@ -36,9 +39,11 @@ var displayMovieFavorites = function() {
  for (var i=0; i < favoriteMovieArr.length; i++) {
    let movieFaveContainer = $("#movieFave" + i);
    movieFaveContainer.removeClass("hidden");
-   let movieFaveImg = $("<img>").attr("src", favoriteMovieArr[i].imageurl[0]).appendTo(movieFaveContainer);
+   let movieFaveImg = $("<img>")
+   movieFaveImg.attr("src", favoriteMovieArr[i].imageurl[0]).appendTo(movieFaveContainer);
    console.log(favoriteMovieArr[i].imageurl[0]);
-   let moveiFaveName = $("<h4>").text(favoriteMovieArr[i].title).appendTo(movieFaveContainer);
+   let movieFaveName =  $("<h4>")
+   movieFaveName.text(favoriteMovieArr[i].title).appendTo(movieFaveContainer);
 ​
  }
 }
