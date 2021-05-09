@@ -107,6 +107,14 @@ p.drinkDropDown.has-text-centered {
     width: 240px;
   }
 
+
+.hero.is-primary.is-medium.rewind {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url("../images/background2.jpg");
+    top: 50%;
+}
+
+
 /* FOOTER STYLING */
 footer.footer {
     background-color: #070C25;
