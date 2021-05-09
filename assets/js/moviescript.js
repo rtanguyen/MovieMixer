@@ -70,6 +70,11 @@ function renderMoviesData(movieChoice) {
   const movieImgDisplay = document.createElement("img");
   movieImgDisplay.setAttribute("src", movieImg);
   movieImgDisplay.setAttribute("alt", "movie rendered image");
+  movieImgDisplay.setAttribute('class', 'movie-img')
+  //setAttribute
+  movieTitleDisplay.setAttribute('class', 'movie-title');
+  descriptionDisplay.setAttribute('class', 'movie-description');
+  movieRatingDisplay.setAttribute('class', 'movie-rating')
   //grab data and insert into html
   movieTitleDisplay.innerHTML = "Your movie is " + movieTitle;
   descriptionDisplay.innerHTML = "Brief synopsis: " + movieSynopsis;
