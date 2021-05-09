@@ -57,8 +57,26 @@
 			</div>
 		</nav>
 
+		<!-- Hero -->
+		<section class="hero is-primary is-medium movie is-link has-text-white">
+			<div class="hero-body">
+			<p class="title is-size-2-desktop is-size-3-mobile movieHead has-text-centered is-uppercase">
+				THEATER ENTRANCE
+			</p>
+			</div>
+		</section>
+
+		<!-- SubHeader -->
+		<div class="subheader">
+			<div class="container">
+				<p class="movieSubHead title is-size-4-desktop is-size-5-mobile has-text-centered has-text-white mt-5">
+					Take a seat, pick your genre, and let's get the film rolling.
+				</p>
+			</div>
+		</div>
+
 		<!-- PAGE DESCRIPTION / Hero Section-->
-		<section class="hero is-primary is-medium movie is-link has-text-white">	
+		<!-- <section class="hero is-primary is-medium movie is-link has-text-white">	
 		<div id="moviePage" class="movieInfo hero-body">
 			<video id="videoBG" poster="/assets/images/movieposter1.JPG" autoplay muted loop>
 			<source src="../MovieMixer/assets/images/hd0044.mp4" type="video/mp4">
@@ -71,44 +89,71 @@
                 If you don't like the movie choice, hit the "I can't drink to this shit" button to reroll.
 			</p>
 		</div>
-		</section>
+		</section> -->
 
 		<!-- Movie Page -->
-		<div class="dropdown">
-			<div class="dropdown-trigger">
-				<button
-					class="button"
-					onclick="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
-					onblur="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
-					aria-haspopup="true"
-					aria-controls="dropdown-menu"
-				>
-					<span>Show me the Movie</span>
-					<span class="icon is-small">
-						<i class="fas fa-angle-down" aria-hidden="true"></i>
-					</span>
-				</button>
-			</div>
-			<div class="dropdown-menu" id="dropdown-menu2" role="menu">
-				<div class="dropdown-content">
-					<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">action</a>
-					<a href="#" onmousedown="javascript:getUserSelection(event);"class="dropdown-item">comedy</a>
-					<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">horror</a>
-					<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">romantic</a>
-					<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">thriller</a>
-					<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">drama</a>
+		<section class="section movieCTA">
+			<div class="container movieCTA">
+				<div class="columns movieCTA is-variable ">
+					<div class="column is-4"></div>
+					<div class="column is-4 dropdown my-5">
+						<div class="dropdown-trigger ">
+							<button
+								class="button movieDrop"
+								onclick="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
+								onblur="javascript:document.querySelector('.dropdown').classList.toggle('is-active')"
+								aria-haspopup="true"
+								aria-controls="dropdown-menu"
+							>
+								<span class="pypID">Show me the Movie</span>
+								<span class="icon is-small">
+									<i class="fas fa-angle-down" aria-hidden="true"></i>
+								</span>
+							</button>
+						</div>
+						<div class="dropdown-menu" id="dropdown-menu2" role="menu">
+							<div class="dropdown-content">
+								<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">action</a>
+								<a href="#" onmousedown="javascript:getUserSelection(event);"class="dropdown-item">comedy</a>
+								<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">horror</a>
+								<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">romantic</a>
+								<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">thriller</a>
+								<a href="#" onmousedown="javascript:getUserSelection(event);" class="dropdown-item">drama</a>
+							</div>
+						</div>
+					</div>
+					<div class="column is-4"></div>
 				</div>
 			</div>
-		</div>
+		</section>
+
+
+
 		<!--contianer to hold movie display and buttons-->
-		<div class="movie-container">
-			<div class="movie-display" id="movie-display">
-	            <!--appended elements will display here-->
+		<section class="section">
+			<div class="columns">
+				<div class="column is-2"></div>
+				<div class="movie-container is-8">
+					<div class="movie-display" id="movie-display">
+						<!--appended elements will display here-->
+					</div>
+					<div id="like-Btns" class="btn"></div>
+						<a class="button is-danger mt-4 has-text-black" id="rerun">Next Flick</a>
+						<i onclick="toggleFavorite(this)" class="far fa-star" id="fave-icon"></i>
+				</div>
+				<div class="column is-2"></div>
+				</div>
 			</div>
+		</section>
+
+		<!-- <div class="movie-container">
+			<div class="movie-display" id="movie-display"> -->
+	            <!--appended elements will display here-->
+			<!-- </div>
 			<div id="like-Btns" class="btn"></div>
-				<a class="button is-danger is-outlined" id="rerun">I can't drink to this shit!</a>
+				<a class="button is-danger mt-4 has-text-black" id="rerun">Next Flick</a>
 				<i onclick="toggleFavorite(this)" class="far fa-star" id="fave-icon"></i>
-		</div>
+		</div> -->
 
 		    <!-- FOOTER -->
 			<footer class="footer">
