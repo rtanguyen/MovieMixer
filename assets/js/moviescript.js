@@ -49,7 +49,8 @@ function fetchMovie(userInput) {
 
 //this function renders the api result
 function renderMoviesData(movieChoice) {
-  //   var movie = {};
+  $(".section").removeClass('hidden');
+  
   //render movie title
   var movieTitle = movieChoice.title;
   console.log(movieTitle);
@@ -84,6 +85,8 @@ function renderMoviesData(movieChoice) {
   movieResultEl.appendChild(movieTitleDisplay);
   movieResultEl.appendChild(descriptionDisplay);
   movieResultEl.appendChild(movieRatingDisplay);
+  $(".section").removeClass('hidden');
+
 }
 //reroll for a different movie
 rerunEl.addEventListener("click", function () {
@@ -114,31 +117,8 @@ function savedFavoriteMovie(movie) {
 };
  
 
-// //load favorites
-// function loadFavoriteMovie() {
-//   //gets item from local storage and saves to an array
-//   favoriteMovieArr = JSON.parse(localStorage.getItem("savedMovies"));
-//   console.log(favoriteMovieArr)
-//   // if (localStorage.getItem('savedMovies') != null){
-//   //   displayFavoriteMovies();
-//   // }
-// }
-
-// function displayFavoriteMovies() {
-//  for (var i=0; i < favoriteMovieArr.length; i++) {
-//    var favMovieTitle = favoriteMovieArr[i].title
-//    console.log(favMovieTitle)
-// // $('#movie-favorites').append(localStorage.getItem(favoriteMovieArr[i].title))
-//    //creates element
-//     const favMovieTitleDisplay = document.createElement('h3')
-//    //grab from local storage
-//    favMovieTitleDisplay.innerHTML = favMovieTitle
-//     favMovieEl.appendChild(favMovieTitleDisplay)
-//   // var favMovieImg = favoriteMovieArr[i]
-//  }
-// }
 
 
-fetchMovie();
+// fetchMovie();
 // loadFavoriteMovie();
 // displayFavoriteMovies();
