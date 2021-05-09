@@ -8,6 +8,18 @@
     color: #000;
 
 }
+.verticalSpacer {
+    height: 450px;
+}
+
+
+.verticalSpacerBig {
+    height: 650px;
+}
+
+.verticalSpacerSm {
+    height: 200px;
+}
 
 /* HOME PAGE STYLING */
 body {
@@ -58,6 +70,15 @@ img.drinkPic {
     height: auto;
   }
 
+.verticalSpacerDrink {
+    height: 120px;
+}
+
+img.brandPic {
+    width: 400px;
+    height: auto;
+}
+
 /* section.section.drinkInfo {
     font-family: 'Cardo', serif;
 } */
@@ -85,6 +106,14 @@ p.drinkDropDown.has-text-centered {
   .button.is-danger {
     width: 240px;
   }
+
+
+.hero.is-primary.is-medium.rewind {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url("../images/background2.jpg");
+    top: 50%;
+}
+
 
 /* FOOTER STYLING */
 footer.footer {

@@ -4,8 +4,8 @@ let favoriteArray = [];
 var movieChoice = {};
 //dom elements on movie html
 var movieResultEl = document.querySelector("#movie-display");
-var rerunBtnEl = document.querySelector("#rerun");
-let favoriteEl = document.querySelector("#fave-icon");
+var rerunEl = document.querySelector("#rerun");
+let favoriteBtnEl = document.querySelector("#fave-icon");
 var saveBtnEl = document.querySelector("#saverun");
 //dom elements on rewind html
 var favMovieEl = document.querySelector('#movieFavorites')
@@ -81,7 +81,7 @@ function renderMoviesData(movieChoice) {
   movieResultEl.appendChild(movieRatingDisplay);
 }
 //reroll for a different movie
-rerunBtnEl.addEventListener("click", function () {
+rerunEl.addEventListener("click", function () {
   $("#movie-display").empty();
   fetchMovie(userInput);
 });
@@ -135,5 +135,5 @@ function savedFavoriteMovie(movie) {
 
 
 fetchMovie();
-loadFavoriteMovie();
-displayFavoriteMovies();
+// loadFavoriteMovie();
+// displayFavoriteMovies();

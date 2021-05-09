@@ -17,46 +17,54 @@
 	</head>
 	<body>
 
-    <!-- HEADER/NAVBAR --> 
-    <nav class="navbar is-transparent mx-6" role="navigation" aria-label="main navigation">
-		<div class="navbar-brand">
-		  <a class="navbar-item" href="index.html">
-			<img src="assets/images/logo4.svg" alt="mm-logo" width="112" height="28">
-		  </a>
-	  
-		  <a role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-			<span aria-hidden="true" class="has-text-white"></span>
-			<span aria-hidden="true" class="has-text-white"></span>
-			<span aria-hidden="true" class="has-text-white"></span>
-		  </a>
-		</div>
+   <!-- HEADER/NAVBAR --> 
+   <nav class="navbar is-white px-3" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="assets/images/favicon.jpeg" alt="mm-logo" width="30" height="30">
+      </a>
   
-	  <!-- Nav Bar tabs-->
-		<div id="nav-links" class="navbar-menu">
-		  <div class="navbar-end">
-        <a href="index.html" class="navbar-item has-text-black">Home</a>
-        <a href="movie.html" class="navbar-item has-text-black">Theater</a>
-        <a href="drink.html" class="navbar-item has-text-black">Bar</a>
-        <a href="rewind.html" class="navbar-item has-text-black">Rewind</a>
-        <a href="about-us.html" class="navbar-item has-text-black">About Us</a>
-	  <!-- Streaming Services Dropdown-->
-			<div class="navbar-item has-dropdown is-hoverable">
-			  <a class="navbar-link is-arrowless is-size-5-tablet has-text-grey-light">
-				Streaming Services
-			  </a>
-  
-			  <div class="navbar-dropdown">
-				<a href="https://www.netflix.com/" class="navbar-item">Nexflix</a>
-				<a href="https://www.hulu.com/" class="navbar-item">Hulu</a>
-				<a href="https://www.hbomax.com/"class="navbar-item">HBO Max</a>
-				<a href ="https://www.youtube.com/"class="navbar-item">Youtube</a>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </nav>
+      <a role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true" class="has-text-black"></span>
+        <span aria-hidden="true" class="has-text-black"></span>
+        <span aria-hidden="true" class="has-text-black"></span>
+      </a>
+    </div>
 
-      <!--Hero 1 | display saved Drink choices-->
+    <!-- Nav Bar tabs-->
+    <div id="nav-links" class="navbar-menu">
+      <div class="navbar-end is-uppercase is-size-6">
+          <a href="index.html" class="navbar-item has-text-black">Home</a>
+          <a href="movie.html" class="navbar-item has-text-black">Theater</a>
+          <a href="drink.html" class="navbar-item has-text-black">Bar</a>
+          <a href="rewind.html" class="navbar-item has-text-black">Rewind</a>
+          <a href="about-us.html" class="navbar-item has-text-black">About Us</a>
+        <!-- Streaming Services Dropdown-->
+        <div class="navbar-item has-dropdown is-hoverable">
+            <a class="navbar-link is-arrowless is-size-6 has-text-black">
+              Streaming Services
+            </a>
+
+          <div class="navbar-dropdown">
+            <a href="https://www.netflix.com/" class="navbar-item" target="_blank">Netflix</a>
+            <a href="https://www.hulu.com/" class="navbar-item" target="_blank">Hulu</a>
+            <a href="https://www.hbomax.com/"class="navbar-item" target="_blank">HBO Max</a>
+            <a href ="https://www.youtube.com/"class="navbar-item" target="_blank">Youtube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  		<!-- Hero -->
+      <section class="hero is-primary is-medium rewind is-link has-text-white is-transparent">
+        <div class="hero-body">
+        <p class="title is-size-2-desktop is-size-3-mobile drinkHead has-text-centered is-uppercase">
+          R E W I N D
+        </p>
+        </div>
+      </section>
+
+      <!--display saved Drink choices-->
       <section class="section rewindDrinkSection">
       <p class="rewindDrinkTitle is-size-2 drinkBody">
           Past Drank Selections <i class="fas fa-cocktail"></i>
@@ -110,48 +118,48 @@
             Past Movie Selections <i class="fas fa-film"></i>
         </p>
         <div class="container">
-            <div class="columns is-flex">
-                <div class="column is-3 mt-5 movieFavorites" id="movie-favorites">
-                    <!--Place Holder-->
-                    <img src="https://www.fillmurray.com/200/300" alt="place filler"/>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ere est ipsum dolores in tenetur, ut, ullam numquam distinctio dolorum voluptatibus suscipit sit veniam unde aut earum?</p>
-                    <!--Favorite Movie Appended here-->
+            <div class="columns is-flex" id="movieFavorites-container">
+              <div id="addMovieFavorite">
+                <p>You do not have any movies saved to your favorites.</p>
+              </div>
+                <div class="column is-3 mt-5 movieFavorites hidden" id="movieFave0">
                   </div>
-                <div class="column is-3 mt-5 is-success movieFavorites">
+                <div class="column is-3 mt-5 is-success movieFavorites hidden" id="movieFave1">
                      <!--Place Holder-->
-                     <img src="https://www.fillmurray.com/200/300" alt="place filler"/>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ere est ipsum dolores in tenetur, ut, ullam numquam distinctio dolorum voluptatibus suscipit sit veniam unde aut earum?</p>
+                     <!-- <img src="https://www.fillmurray.com/200/300" alt="place filler"/>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ere est ipsum dolores in tenetur, ut, ullam numquam distinctio dolorum voluptatibus suscipit sit veniam unde aut earum?</p> -->
                   <!--Favorite Movie Appended here-->
                   </div>
-                  <div class="column is-3 mt-5 is-success movieFavorites">
+                  <div class="column is-3 mt-5 is-success movieFavorites hidden" id="movieFave2">
                        <!--Place Holder-->
-                       <img src="https://www.fillmurray.com/200/300" alt="place filler"/>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ere est ipsum dolores in tenetur, ut, ullam numquam distinctio dolorum voluptatibus suscipit sit veniam unde aut earum?</p>
+                       <!-- <img src="https://www.fillmurray.com/200/300" alt="place filler"/>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ere est ipsum dolores in tenetur, ut, ullam numquam distinctio dolorum voluptatibus suscipit sit veniam unde aut earum?</p> -->
                   <!--Favorite MovieAppended here-->
                    </div>
-                  <div class="column is-3 mt-5 is success movieFavorites">
+                  <div class="column is-3 mt-5 is success movieFavorites hidden" id="movieFave3">
                        <!--Place Holder-->
-                       <img src="https://www.fillmurray.com/200/300" alt="place filler"/>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ere est ipsum dolores in tenetur, ut, ullam numquam distinctio dolorum voluptatibus suscipit sit veniam unde aut earum?</p>
+                       <!-- <img src="https://www.fillmurray.com/200/300" alt="place filler"/>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut, ere est ipsum dolores in tenetur, ut, ullam numquam distinctio dolorum voluptatibus suscipit sit veniam unde aut earum?</p> -->
                   <!--Favorite Drink Appended here-->
                   </div>
             </div>
         </div>
         </section>
-<!-- SCRIPTS -->
-       <!-- FOOTER -->
-       <footer class="footer rewindFooter">
-		    <div class="content has-text-centered">
-			    <p class="is-size-6">
-				    -Movie Mixer- by R+M Designs &#124; All Rights Reserved
-			    </p>
-		</footer>
 
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+          <p class="is-size-6-tablet is-size-7-mobile foot">
+            Movie Mixer by R+M Designs &#124; All Rights Reserved. &#124; <a class="footLink has-text-white" href="contact-us.html">Contact Us</a>
+          </p>
+        </div>
+    </footer> 
+
+    <!-- SCRIPTS -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="assets/js/moviescript.js"></script>
         <script src="assets/js/favesscript.js"></script>
+        <script src="assets/js/moviescript.js"></script>
         <script src="assets/js/drinksscript.js"></script>
     </body>
-
-  
 </html>
