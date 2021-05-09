@@ -76,9 +76,9 @@ function renderMoviesData(movieChoice) {
   descriptionDisplay.setAttribute('class', 'movie-description');
   movieRatingDisplay.setAttribute('class', 'movie-rating')
   //grab data and insert into html
-  movieTitleDisplay.innerHTML = "Your movie is " + movieTitle;
+  movieTitleDisplay.innerHTML = movieTitle;
   descriptionDisplay.innerHTML = "Brief synopsis: " + movieSynopsis;
-  movieRatingDisplay.innerHTML = "it has a " + movieRating + " on IMDB.";
+  movieRatingDisplay.innerHTML = "IMDB Rating of " + movieRating;
   //append to movie display container
   movieResultEl.appendChild(movieImgDisplay);
   movieResultEl.appendChild(movieTitleDisplay);
