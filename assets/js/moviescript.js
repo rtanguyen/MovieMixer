@@ -97,7 +97,7 @@ function toggleFavorite(favorite) {
   }
   localStorage.setItem("savedMovies", JSON.stringify(favoriteArray));
 }
-//save favorite
+//save favorite to favoriteMovieArr
 function savedFavoriteMovie(movie) {
    if (favoriteEl.classList.contains("fas")) {
     favoriteMovieArr.push(movie);
@@ -114,15 +114,16 @@ function savedFavoriteMovie(movie) {
 //   //gets item from local storage and saves to an array
 //   favoriteMovieArr = JSON.parse(localStorage.getItem("savedMovies"));
 //   console.log(favoriteMovieArr)
-//   if (localStorage.getItem('savedMovies') != null){
-//     displayFavoriteMovies();
-//   }
+//   // if (localStorage.getItem('savedMovies') != null){
+//   //   displayFavoriteMovies();
+//   // }
 // }
 
 // function displayFavoriteMovies() {
 //  for (var i=0; i < favoriteMovieArr.length; i++) {
 //    var favMovieTitle = favoriteMovieArr[i].title
 //    console.log(favMovieTitle)
+// // $('#movie-favorites').append(localStorage.getItem(favoriteMovieArr[i].title))
 //    //creates element
 //     const favMovieTitleDisplay = document.createElement('h3')
 //    //grab from local storage
