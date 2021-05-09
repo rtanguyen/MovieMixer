@@ -74,6 +74,11 @@ img.drinkPic {
     height: 120px;
 }
 
+img.brandPic {
+    width: 400px;
+    height: auto;
+}
+
 /* section.section.drinkInfo {
     font-family: 'Cardo', serif;
 } */
