@@ -8,6 +8,18 @@
     color: #000;
 
 }
+.verticalSpacer {
+    height: 450px;
+}
+
+
+.verticalSpacerBig {
+    height: 650px;
+}
+
+.verticalSpacerSm {
+    height: 200px;
+}
 
 /* HOME PAGE STYLING */
 body {
@@ -57,6 +69,15 @@ img.drinkPic {
     width: 100%;
     height: auto;
   }
+
+.verticalSpacerDrink {
+    height: 120px;
+}
+
+img.brandPic {
+    width: 400px;
+    height: auto;
+}
 
 /* section.section.drinkInfo {
     font-family: 'Cardo', serif;
