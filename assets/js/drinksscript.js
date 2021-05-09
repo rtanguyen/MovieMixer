@@ -3,7 +3,7 @@ let favoriteDrinkArray = [];
 let drink = {};
 var userInput;
 var drinkResultEl = document.querySelector("#drink-display");
-var rerunBtnEl = document.querySelector("#rerun");
+var rerunEl = document.querySelector("#rerun");
 let favoriteEl = document.querySelector("#fave-icon");
 //====================== LOGIC AND RUN ======================//
 
@@ -113,7 +113,7 @@ var parseDrinkResponse = function (response) {
 };
 
 //event listener to rerun based on last user selection
-rerunBtnEl.addEventListener("click", function () {
+rerunEl.addEventListener("click", function () {
   $("#ingredients").empty();
   randomDrink(userInput);
   favoriteEl.classList.add("far");
