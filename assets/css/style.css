@@ -185,6 +185,7 @@ section.hero.is-primary.is-medium.movie {
     color: white;
     font-size: larger;
     font-weight: bold;
+    justify-content: center;
 }
 
 .far.fa-star.fas {
