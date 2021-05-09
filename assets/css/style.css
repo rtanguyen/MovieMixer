@@ -8,10 +8,10 @@
     color: #000;
 
 }
-
 .verticalSpacer {
     height: 450px;
 }
+
 
 .verticalSpacerBig {
     height: 650px;
@@ -69,6 +69,10 @@ img.drinkPic {
     width: 100%;
     height: auto;
   }
+
+.verticalSpacerDrink {
+    height: 120px;
+}
 
 /* section.section.drinkInfo {
     font-family: 'Cardo', serif;
