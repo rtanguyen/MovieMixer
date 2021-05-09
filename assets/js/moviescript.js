@@ -8,7 +8,7 @@ var rerunBtnEl = document.querySelector("#rerun");
 let favoriteEl = document.querySelector("#fave-icon");
 var saveBtnEl = document.querySelector("#saverun");
 //dom elements on rewind html
-var favMovieEl = document.querySelector('#movie-favorites')
+var favMovieEl = document.querySelector('#movieFavorites')
 
 //grab user input from drop down for movie service selector
 var getUserSelection = function (event) {
@@ -97,6 +97,17 @@ function toggleFavorite(favorite) {
   }
   localStorage.setItem("savedMovies", JSON.stringify(favoriteArray));
 }
+//save favorite
+function savedFavoriteMovie(movie) {
+   if (favoriteEl.classList.contains("fas")) {
+    favoriteMovieArr.push(movie);
+    // console.log(favoriteMovieArr);
+    //if user unstars drink, removes last object from array
+  } else if (favoriteEl.classList.contains("far")) {
+    favoriteMovieArr.pop();
+}
+};
+ 
 
 //load favorites
 function loadFavoriteMovie() {
