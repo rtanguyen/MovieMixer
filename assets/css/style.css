@@ -44,9 +44,9 @@ h1.title.is-size-1-desktop:hover {
     transform: rotateY(150deg);
 }
 
-/* img.homeDrinkImg:hover{
+img.homeDrinkImg:hover{
     src: url("/assets/images/movie1.jpg");
-} */
+}
 
 button.button.is-danger.is-hoverable {
     align-items: baseline;
@@ -64,6 +64,7 @@ section.hero.drink.is-medium {
     background-position: center; 
 }
 
+<<<<<<< HEAD
 img.drinkPic {
     padding-top: 25px;
     width: 100%;
@@ -137,6 +138,8 @@ button.button.movieDrop {
     justify-content: space-between;
 }
 
+=======
+>>>>>>> develop
 /* Movie Styling */
 section.hero.movie.is-medium {
  background-color: transparent;
@@ -164,6 +167,7 @@ section.hero.movie.is-medium {
     font-size: larger;
     font-weight: bold;
 }
+<<<<<<< HEAD
 
 
 /* movie page */
@@ -178,6 +182,9 @@ section.hero.is-primary.is-medium.movie {
     background-position: center; 
 }
 
+=======
+/* movie page */
+>>>>>>> develop
 .movie-display {
     color: black;
     font-size: larger;
@@ -250,31 +257,4 @@ p.movie-description {
 
 .rewindBtn {
     height: unset;
-}
-
-/*about styling*/
-#portfolio-card {
-    background-color: white;
-    padding: 20px;
-    border-style: outset;
-    border-width: 5px;
-    align-items: center;
-}
-
-/* about us page */
-
-.aboutUsDisplay {
-    color: white;
-}
-
-.aboutUsDisplayh1 {
-    color: white;
-}
-
-.verticalSpacerSmall {
-    height: 10px;
-}
-
-.verticalSpacerMedium {
-    height: 150px;
 }
