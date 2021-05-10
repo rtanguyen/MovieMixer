@@ -1,0 +1,275 @@
+[33mcommit 8f4bee786223e6f4a521aa35f28464b4011f4ee5[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m)[m
+Merge: 0066ad4 6984bae
+Author: Rarmstrong45 <Ryan_armstrong07@yahoo.com>
+Date:   Sun May 9 23:28:51 2021 -0500
+
+    Merge branch 'main' of github.com:rtanguyen/MovieMixer into develop
+
+[33mcommit 6984bae64ee3e6c3343d22df49c1a753563ed5c7[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: e2cc221 eecf919
+Author: Ronnie Rios <79483108+ronnie-rios@users.noreply.github.com>
+Date:   Sun May 9 23:28:38 2021 -0500
+
+    Merge pull request #113 from rtanguyen/develop
+    
+    Develop
+
+[33mcommit 0066ad435e0664aafa8d1beadbf59de970199485[m
+Merge: cea5270 eecf919
+Author: Rarmstrong45 <Ryan_armstrong07@yahoo.com>
+Date:   Sun May 9 23:27:38 2021 -0500
+
+    merging conflict
+
+[33mcommit eecf91985f9af03204ba6bfd7e25c926c2aed982[m[33m ([m[1;31morigin/develop[m[33m)[m
+Merge: 6a57897 31566f6
+Author: Thuy Lien Vo <79684575+thuylienvo@users.noreply.github.com>
+Date:   Sun May 9 23:26:05 2021 -0500
+
+    Merge pull request #112 from rtanguyen/mimi
+    
+    Mimi
+
+[33mcommit 31566f6273c73454e41826aad6183c29092a5012[m
+Merge: 7decea2 e2cc221
+Author: Mimi Vo <mimzy414@gmail.com>
+Date:   Sun May 9 23:25:11 2021 -0500
+
+    merge
+
+[33mcommit 7decea2c8c868aa03581f3df48ebdfa36544b0da[m
+Author: Mimi Vo <mimzy414@gmail.com>
+Date:   Sun May 9 23:21:11 2021 -0500
+
+    added drink brands
+
+[33mcommit e2cc221c297af92d511072d9419a9ec606a25329[m
+Merge: 2b58e7e 5533a18
+Author: rtanguyen <78758729+rtanguyen@users.noreply.github.com>
+Date:   Sun May 9 13:44:17 2021 -0500
+
+    Merge pull request #111 from rtanguyen/ronnie
+
+[33mcommit 5533a1886216a3fa7e4102e12dc2518dccb373d7[m
+Author: Ronnie Rios <ronniesmail14@gmail.com>
+Date:   Sun May 9 13:42:44 2021 -0500
+
+    reset favorite button on reroll
+
+[33mcommit 2b58e7e76000190d9caf92bea419d3bd91683395[m
+Merge: f5a7195 b8f2ae8
+Author: Thuy Lien Vo <79684575+thuylienvo@users.noreply.github.com>
+Date:   Sun May 9 13:16:12 2021 -0500
+
+    Merge pull request #110 from rtanguyen/ronnie
+    
+    Ronnie
+
+[33mcommit b8f2ae870e9f7772442645500d8b0880c7f381a6[m
+Author: Ronnie Rios <ronniesmail14@gmail.com>
+Date:   Sun May 9 13:15:06 2021 -0500
+
+    added remove class of hidden for wehn render movie function runs
+
+[33mcommit e7075178fdeda85f446c2369f39ca092557ed5b2[m
+Merge: fc4fea4 f5a7195
+Author: Ronnie Rios <ronniesmail14@gmail.com>
+Date:   Sun May 9 13:03:20 2021 -0500
+
+    Merge branch 'main' of github.com:rtanguyen/MovieMixer into ronnie
+
+[33mcommit f5a7195a8a421e9cadf19b44366190d76df0a30b[m
+Merge: ba0be40 6a57897
+Author: Ronnie Rios <79483108+ronnie-rios@users.noreply.github.com>
+Date:   Sun May 9 13:03:12 2021 -0500
+
+    Merge pull request #109 from rtanguyen/develop
+    
+    Develop
+
+[33mcommit 6a57897cd83ea1a1ac3a52e32bd6a9874fe39691[m
+Merge: cf421b1 da133ba
+Author: Thuy Lien Vo <79684575+thuylienvo@users.noreply.github.com>
+Date:   Sun May 9 13:02:36 2021 -0500
+
+    Merge pull request #108 from rtanguyen/mimi
+    
+    Mimi
+
+[33mcommit da133ba3d6f514b21f1168a44a1fcf8743f7129b[m
+Author: Mimi Vo <mimzy414@gmail.com>
+Date:   Sun May 9 13:02:00 2021 -0500
+
+    addded move to drink CTA
+
+[33mcommit dce601b325fef9b5dd3fd61a73b1ed3cb212be8b[m
+Author: Mimi Vo <mimzy414@gmail.com>
+Date:   Sun May 9 13:00:56 2021 -0500
+
+    added hidden class to movie data
+
+[33mcommit 923558a99e75aa747d570a72112eeff34bdc3653[m
+Author: Mimi Vo <mimzy414@gmail.com>
+Date:   Sun May 9 12:47:55 2021 -0500
+
+    centered movie data
+
+[33mcommit fc4fea48b323f895b8b4e71318c5b815785976eb[m
+Author: Ronnie Rios <ronniesmail14@gmail.com>
+Date:   Sun May 9 12:41:29 2021 -0500
+
+    edited lines 79-81
+
+[33mcommit ba0be4088ba9474f4c4e6ca59a581b698f9907fe[m
+Merge: d5e8bf9 cf421b1
+Author: Ronnie Rios <79483108+ronnie-rios@users.noreply.github.com>
+Date:   Sun May 9 12:30:54 2021 -0500
+
+    Merge pull request #107 from rtanguyen/develop
+    
+    Develop
+
+[33mcommit cf421b18bec1869fa5a0422ec50a922e02814cc1[m
+Merge: 6ea9a74 583ce80
+Author: Thuy Lien Vo <79684575+thuylienvo@users.noreply.github.com>
+Date:   Sun May 9 12:30:13 2021 -0500
+
+    Merge pull request #106 from rtanguyen/mimi
+    
+    Mimi
+
+[33mcommit d5e8bf9d3fb8f45cd0efb9080162faa4f46f67e8[m
+Merge: 5aabd4b 50d964c
+Author: Thuy Lien Vo <79684575+thuylienvo@users.noreply.github.com>
+Date:   Sun May 9 12:29:52 2021 -0500
+
+    Merge pull request #105 from rtanguyen/ronnie
+    
+    added classes to dynamically created movie elements
+
+[33mcommit 583ce80bdd7f736e94422e5b9883762b2536c423[m
+Author: Mimi Vo <mimzy414@gmail.com>
+Date:   Sun May 9 12:29:24 2021 -0500
+
+    styled movie data container
+
+[33mcommit 50d964c95a08151c18761b778f50f34101d62c10[m
+Author: Ronnie Rios <ronniesmail14@gmail.com>
+Date:   Sun May 9 12:28:03 2021 -0500
+
+    added classes to dynamically created movie elements
+
+[33mcommit b543cffb6a52190f70f172f78f648c6663b8c398[m
+Merge: 7b82e46 5aabd4b
+Author: Mimi Vo <mimzy414@gmail.com>
+Date:   Sun May 9 12:10:47 2021 -0500
+
+    styled movie dropdown btn
+
+[33mcommit 5aabd4b5ef3cdb105f3ad6e1a1f50cf3db1f8ceb[m
+Merge: 826631c 362028a
+Author: Thuy Lien Vo <79684575+thuylienvo@users.noreply.github.com>
+Date:   Sun May 9 11:43:37 2021 -0500
+
+    Merge pull request #104 from rtanguyen/ronnie
+    
+    Ronnie
+
+[33mcommit 362028a1ef4df24bc1f9c9f93ac8fa2c4e7cd049[m
+Author: Ronnie Rios <ronniesmail14@gmail.com>
+Date:   Sun May 9 11:40:37 2021 -0500
+
+    added script file linked to rewind html
+
+[33mcommit a5c80423fe2b8fa15bbeeccd7482b50d157e6678[m
+Author: Ronnie Rios <ronniesmail14@gmail.com>
+Date:   Sun May 9 11:38:44 2021 -0500
+
+    favescript-removed empty spaces and made sure syntax was correct
+
+[33mcommit 7b82e4672bdd633b4e02ff4d8a0de4d4f8d16244[m
+Author: Mimi Vo <mimzy414@gmail.com>
+Date:   Sun May 9 11:29:44 2021 -0500
+
+    added subheader to moviehtml
+
+[33mcommit 5cda53c67d8e49b01ea85bbce8ff9c838fa9c720[m
+Author: Mimi Vo <mimzy414@gmail.com>
+Date:   Sun May 9 11:19:23 2021 -0500
+
+    updated movie hero/added image
+
+[33mcommit 826631ce508a8108b2cd07a9289299a92d30eed8[m
+Merge: 6ac3b83 810f33f
+Author: Thuy Lien Vo <79684575+thuylienvo@users.noreply.github.com>
+Date:   Sun May 9 10:58:10 2021 -0500
+
+    Merge pull request #103 from rtanguyen/ronnie
+    
+    Ronnie
+
+[33mcommit 810f33f4564c9424603bb406be779627b7507d1d[m
+Author: Ronnie Rios <ronniesmail14@gmail.com>
+Date:   Sun May 9 10:56:16 2021 -0500
+
+    modified lines 17-21 and 41-46 for variables to be declared
+
+[33mcommit 9da84e8c6d11a53e191299ebfb9e6429ff330134[m
+Author: Ronnie Rios <ronniesmail14@gmail.com>
+Date:   Sun May 9 10:18:35 2021 -0500
+
+    linked appropriate favescript to rewind html
+
+[33mcommit 356386f445d6f835b9448e1a97277722414f90f6[m
+Author: Ronnie Rios <ronniesmail14@gmail.com>
+Date:   Sun May 9 10:08:39 2021 -0500
+
+    added load favorites function
+
+[33mcommit 4acb1a457a312eea23fafff5d458e70fce5f8e68[m
+Merge: 413b09e 6ac3b83
+Author: Ronnie Rios <ronniesmail14@gmail.com>
+Date:   Sun May 9 10:02:36 2021 -0500
+
+    resolved merge
+
+[33mcommit 413b09e63f61ba024ea8cb07b7f700ef8338fa13[m
+Author: Ronnie Rios <ronniesmail14@gmail.com>
+Date:   Sun May 9 10:00:32 2021 -0500
+
+    commented out load function
+
+[33mcommit 6ac3b830deca81ed7595cd1a804bd9e91b7a1e9f[m
+Merge: 16544dc 6ea9a74
+Author: rtanguyen <78758729+rtanguyen@users.noreply.github.com>
+Date:   Sun May 9 01:12:10 2021 -0500
+
+    Merge pull request #102 from rtanguyen/develop
+    
+    Develop
+
+[33mcommit 6ea9a7430453af8ee8edaca178f5ee3037557506[m
+Merge: c8dd474 a0dd60d
+Author: Thuy Lien Vo <79684575+thuylienvo@users.noreply.github.com>
+Date:   Sun May 9 01:11:36 2021 -0500
+
+    Merge pull request #101 from rtanguyen/mimi
+    
+    Mimi
+
+[33mcommit a0dd60da74c660eeb1d74980b63b20641b1a7915[m
+Merge: 98fe568 c8dd474
+Author: Thuy Lien Vo <79684575+thuylienvo@users.noreply.github.com>
+Date:   Sun May 9 01:11:29 2021 -0500
+
+    Merge branch 'develop' into mimi
+
+[33mcommit 16544dc623e4eb6925c8e483671ee6da4475c0fb[m
+Merge: fa86fd5 c8dd474
+Author: Thuy Lien Vo <79684575+thuylienvo@users.noreply.github.com>
+Date:   Sun May 9 01:09:27 2021 -0500
+
+    Merge pull request #100 from rtanguyen/develop
+    
+    Develop
+

@@ -64,7 +64,6 @@ section.hero.drink.is-medium {
     background-position: center; 
 }
 
-<<<<<<< HEAD
 img.drinkPic {
     padding-top: 25px;
     width: 100%;
@@ -138,8 +137,6 @@ button.button.movieDrop {
     justify-content: space-between;
 }
 
-=======
->>>>>>> develop
 /* Movie Styling */
 section.hero.movie.is-medium {
  background-color: transparent;
@@ -167,7 +164,6 @@ section.hero.movie.is-medium {
     font-size: larger;
     font-weight: bold;
 }
-<<<<<<< HEAD
 
 
 /* movie page */
@@ -182,9 +178,6 @@ section.hero.is-primary.is-medium.movie {
     background-position: center; 
 }
 
-=======
-/* movie page */
->>>>>>> develop
 .movie-display {
     color: black;
     font-size: larger;
@@ -257,4 +250,8 @@ p.movie-description {
 
 .rewindBtn {
     height: unset;
+}
+
+#portfolio-card {
+    background-color: white;
 }
