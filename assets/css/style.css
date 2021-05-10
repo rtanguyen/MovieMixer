@@ -107,12 +107,12 @@ p.drinkDropDown.has-text-centered {
     width: 240px;
   }
 
-
 .hero.is-primary.is-medium.rewind {
     font-family: 'Quicksand', sans-serif;
     background-image: url("../images/background2.jpg");
     top: 50%;
 }
+
 
 
 /* FOOTER STYLING */
@@ -167,6 +167,10 @@ section.hero.movie.is-medium {
 
 
 /* movie page */
+
+.movieSpacer {
+    height: 250px;
+}
 
 section.hero.is-primary.is-medium.movie {
     background-image: url("../images/theater.jpg");
@@ -257,3 +261,20 @@ p.movie-description {
     align-items: center;
 }
 
+/* about us page */
+
+.aboutUsDisplay {
+    color: white;
+}
+
+.aboutUsDisplayh1 {
+    color: white;
+}
+
+.verticalSpacerSmall {
+    height: 10px;
+}
+
+.verticalSpacerMedium {
+    height: 150px;
+}

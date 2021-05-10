@@ -1,3 +1,5 @@
+var deleteAllBTN = document.querySelector("#clearBtn");
+
 // load favorite drinks
 var loadFavorites = function() {
     favoriteDrinkArray = JSON.parse(localStorage.getItem("savedDrinks"));
@@ -43,3 +45,10 @@ var displayMovieFavorites = function() {
   }}}
 loadFavorites();
 loadFavoriteMovie();
+
+// Delete all Local Storage
+
+deleteAllBTN.addEventListener("click", function () {
+  localStorage.clear();
+  location.reload(true);
+});
