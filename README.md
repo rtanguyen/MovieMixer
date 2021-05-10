@@ -39,7 +39,7 @@
 
 ## Installation
 No installation required, to access this application,
-[ Click here ](https://github.com/rtanguyen/MovieMixer.git) 
+[ Click here ](https://rtanguyen.github.io/MovieMixer/) 
 
 ## Technology 
   * HTML
