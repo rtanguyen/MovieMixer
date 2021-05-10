@@ -44,9 +44,9 @@ h1.title.is-size-1-desktop:hover {
     transform: rotateY(150deg);
 }
 
-/* img.homeDrinkImg:hover{
+img.homeDrinkImg:hover{
     src: url("/assets/images/movie1.jpg");
-} */
+}
 
 button.button.is-danger.is-hoverable {
     align-items: baseline;
@@ -107,12 +107,12 @@ p.drinkDropDown.has-text-centered {
     width: 240px;
   }
 
-
 .hero.is-primary.is-medium.rewind {
     font-family: 'Quicksand', sans-serif;
     background-image: url("../images/background2.jpg");
     top: 50%;
 }
+
 
 
 /* FOOTER STYLING */
@@ -167,6 +167,10 @@ section.hero.movie.is-medium {
 
 
 /* movie page */
+
+.movieSpacer {
+    height: 250px;
+}
 
 section.hero.is-primary.is-medium.movie {
     background-image: url("../images/theater.jpg");
@@ -248,12 +252,6 @@ p.movie-description {
     height: unset;
 }
 
-/*about styling*/
 #portfolio-card {
     background-color: white;
-    padding: 20px;
-    border-style: outset;
-    border-width: 5px;
-    align-items: center;
 }
-

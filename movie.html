@@ -137,9 +137,13 @@
 					<div class="movie-display" id="movie-display">
 						<!--appended elements will display here-->
 					</div>
+					<div class="button-container columns">
+						<div class="column is-5.5"></div>
 					<div id="like-Btns" class="btn is-centered"></div>
-						<a class="button is-danger mt-4 has-text-black" id="rerun">Next Flick</a>
+						<a class="button is-danger mt-4 has-text-black columin is-8" id="rerun">Next Flick</a>
 						<i onclick="toggleFavorite(this)" class="far fa-star" id="fave-icon"></i>
+					<div class="column is-5.5"></div>
+				</div>
 				</div>
 				<div class="column is-2"></div>
 				</div>
@@ -151,7 +155,7 @@
 			<a href="drink.html"><button class="button is-warning is-hoverable has-text-black is-pulled-right" id="moveToDrink">Let's Make a Drink</button></a>
 		</div>
 
-		<div class="verticalSpacer"></div>
+		<div class="verticalSpacer movieSpacer"></div>
 
 		<!-- <div class="movie-container">
 			<div class="movie-display" id="movie-display"> -->
@@ -161,6 +165,16 @@
 				<a class="button is-danger mt-4 has-text-black" id="rerun">Next Flick</a>
 				<i onclick="toggleFavorite(this)" class="far fa-star" id="fave-icon"></i>
 		</div> -->
+
+		<!-- Scrolling Movie Pages-->
+		<div class="container pb-100px">
+		<marquee behavior="scroll" direction="left" scrollamount="18">
+			<img src="./assets/images/JP.jpg" width="550" height="400" alt="Jurrasic Park">
+			<img src="./assets/images/millers.jpg" width="530" height="400" alt="Were the Millers">
+			<img src="./assets/images/MRSDoubtfire.jpg" width="550" height="400" alt="Mrs Doubtfire">
+			<img src="./assets/images/jaws.jpg" width="550" height="200" alt="jaws">
+			</marquee>
+		</div>
 
 		    <!-- FOOTER -->
 			<footer class="footer">
